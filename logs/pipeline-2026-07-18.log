@@ -212,3 +212,87 @@
 [2026-07-18T11:48:31.995Z] [INFO] ✅ Processed: "Nintendo Gains A Rep Boost As Sony &amp; Microsoft..." → gaming
 [2026-07-18T11:48:48.598Z] [INFO] ✅ Processed: "TES6 in full development, Fallout 5 in pre-develop..." → gaming
 [2026-07-18T11:49:07.039Z] [INFO] ✅ Processed: "Assassin’s Creed Black Flag Resynced Has Sold Over..." → gaming
+[2026-07-18T12:16:44.310Z] [INFO] 🚀 LOPINUZE Pipeline v3.0 — lopinuze.online
+[2026-07-18T12:16:44.311Z] [INFO] ══════ STARTING PIPELINE RUN ══════
+[2026-07-18T12:16:45.270Z] [INFO] Fetched 27 from https://www.theguardian.com/science/rss
+[2026-07-18T12:16:46.961Z] [INFO] Fetched 25 from https://www.reddit.com/r/robotics/.rss
+[2026-07-18T12:16:50.245Z] [INFO] Fetched 45 from https://www.theguardian.com/world/rss
+[2026-07-18T12:16:51.397Z] [INFO] Fetched 54 from https://feeds.bbci.co.uk/news/business/rss.xml
+[2026-07-18T12:16:52.019Z] [INFO] Fetched 52 from https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+[2026-07-18T12:16:54.866Z] [INFO] Fetched 67 from https://feeds.bbci.co.uk/news/politics/rss.xml
+[2026-07-18T12:16:55.218Z] [INFO] Fetched 30 from https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+[2026-07-18T12:16:55.561Z] [INFO] Fetched 28 from https://rss.nytimes.com/services/xml/rss/nyt/US.xml
+[2026-07-18T12:16:56.638Z] [INFO] Fetched 20 from https://www.theguardian.com/world/europe-news/rss
+[2026-07-18T12:16:58.335Z] [INFO] Fetched 50 from https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+[2026-07-18T12:17:00.188Z] [INFO] Fetched 25 from https://www.theguardian.com/environment/rss
+[2026-07-18T12:17:01.845Z] [INFO] Fetched 54 from https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml
+[2026-07-18T12:17:03.659Z] [INFO] Fetched 42 from https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+[2026-07-18T12:17:05.079Z] [INFO] Fetched 20 from https://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+[2026-07-18T12:17:06.859Z] [INFO] Fetched 18 from https://feeds.bbci.co.uk/news/education/rss.xml
+[2026-07-18T12:17:08.386Z] [INFO] Fetched 20 from https://hnrss.org/frontpage?points=20
+[2026-07-18T12:17:08.908Z] [INFO] Fetched 52 from https://feeds.bbci.co.uk/news/health/rss.xml
+[2026-07-18T12:17:10.196Z] [INFO] Fetched 20 from https://www.theguardian.com/world/asia-pacific/rss
+[2026-07-18T12:17:10.793Z] [INFO] Fetched 20 from https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2026-07-18T12:17:13.350Z] [INFO] Fetched 28 from https://www.theguardian.com/technology/rss
+[2026-07-18T12:17:15.038Z] [INFO] Fetched 20 from https://rss.nytimes.com/services/xml/rss/nyt/RealEstate.xml
+[2026-07-18T12:17:17.332Z] [INFO] Fetched 21 from https://feeds.bbci.co.uk/news/technology/rss.xml
+[2026-07-18T12:17:18.288Z] [INFO] Fetched 20 from https://rss.nytimes.com/services/xml/rss/nyt/YourMoney.xml
+[2026-07-18T12:17:18.784Z] [INFO] Fetched 29 from https://feeds.bbci.co.uk/news/world/rss.xml
+[2026-07-18T12:17:19.940Z] [INFO] Fetched 19 from https://rss.nytimes.com/services/xml/rss/nyt/Education.xml
+[2026-07-18T12:17:25.549Z] [INFO] Fetched 40 from https://www.theguardian.com/business/rss
+[2026-07-18T12:17:30.156Z] [INFO] RSS covered 15/50 sections. Uncovered: ai, machine-learning, deep-learning, gaming, esports, game-reviews, game-development, mobile-gaming, vr-ar, cybersecurity, cloud-computing, blockchain, fintech, trading, cryptocurrency, stock-market, etfs, forex, crypto-mining, defi, nutrition, fitness, mental-health, supplements, weight-loss, yoga-meditation, astronomy, geology, space, physics, biology, chemistry, psychology, neuroscience, energy
+[2026-07-18T12:17:30.156Z] [INFO] Fetched 846 total articles from RSS feeds
+[2026-07-18T12:17:30.157Z] [INFO] Dedup: 9 existing articles loaded
+[2026-07-18T12:17:30.159Z] [INFO] Processing 50 articles across 15 sections...
+[2026-07-18T12:17:43.089Z] [INFO] ✅ Processed: "Earth-like exoplanet found to have an atmosphere..." → science
+[2026-07-18T12:17:58.422Z] [INFO] ✅ Processed: "Anthropic is rumored to be pursuing robot AI devel..." → robotics
+[2026-07-18T12:18:19.073Z] [INFO] ✅ Processed: "‘We are preserving a tradition’: how Ghana’s sensa..." → world-news
+[2026-07-18T12:18:35.454Z] [INFO] ✅ Processed: "'My buyers dropped their offer by £15,000 the day ..." → investing
+[2026-07-18T12:18:48.458Z] [INFO] ✅ Processed: "Burnham to announce plans for new North Sea oil an..." → politics
+[2026-07-18T12:19:00.319Z] [INFO] ✅ Processed: "‘The Top Hats Are Saved!’ A Texas Dance Studio Wea..." → us-news
+[2026-07-18T12:19:18.749Z] [INFO] ✅ Processed: "‘It’s only going to get worse’: wildfires forcing ..." → europe-news
+[2026-07-18T12:19:34.344Z] [INFO] ✅ Processed: "‘It’s only going to get worse’: wildfires forcing ..." → environment
+[2026-07-18T12:19:49.213Z] [INFO] ✅ Processed: "Taking Out the Trash: These Old Ladies Are Cleanin..." → climate
+[2026-07-18T12:20:04.870Z] [INFO] ✅ Processed: "Cyclospora Linked to Taylor Farms Lettuce Sent to ..." → medicine
+[2026-07-18T12:20:16.842Z] [INFO] ✅ Processed: "Free school meal pupils falling further behind the..." → education
+[2026-07-18T12:20:28.935Z] [INFO] ✅ Processed: "Trump, not Iran, is the world’s greatest danger. H..." → asia-news
+[2026-07-18T12:20:42.928Z] [INFO] ✅ Processed: "7th Time’s a Charm for a First-Time Buyer Plagued ..." → real-estate
+[2026-07-18T12:20:57.680Z] [INFO] ✅ Processed: "Why Some Banks Still Charge High Overdraft Fees..." → personal-finance
+[2026-07-18T12:21:12.910Z] [INFO] ✅ Processed: "What AI did to stackoverflow in a graph..." → tech
+[2026-07-18T12:21:25.450Z] [INFO] ✅ Processed: "Brain implant helps paralysed man to feed himself ..." → science
+[2026-07-18T12:21:37.742Z] [INFO] ✅ Processed: "One small pen for one giant fee: Buzz Aldrin’s mis..." → science
+[2026-07-18T12:21:52.155Z] [INFO] ✅ Processed: "Can a world-first gene therapy reverse ageing? – p..." → science
+[2026-07-18T12:22:06.328Z] [INFO] ✅ Processed: "Shipwrecks of Shackleton and Scott recreated in 3D..." → science
+[2026-07-18T12:22:20.166Z] [INFO] ✅ Processed: "Ancient DNA analysis reveals Wiltshire’s Upton Lov..." → science
+[2026-07-18T12:22:32.435Z] [INFO] ✅ Processed: "Plantwatch: Beware a tasty mushroom with a powerfu..." → science
+[2026-07-18T12:22:44.109Z] [INFO] ✅ Processed: "Weatherwatch: How English summer clouds can warn o..." → science
+[2026-07-18T12:22:58.329Z] [INFO] ✅ Processed: "Sale of multimillion-dollar T rex skeleton is big ..." → science
+[2026-07-18T12:23:10.554Z] [INFO] ✅ Processed: "Space jam: astronomers detect ‘raspberry sugar’ on..." → science
+[2026-07-18T12:23:30.666Z] [INFO] ✅ Processed: "First patients enrolled in record-breaking Ebola t..." → science
+[2026-07-18T12:23:44.813Z] [INFO] ✅ Processed: "Once again we are told AI may be conscious – I stu..." → science
+[2026-07-18T12:23:58.832Z] [INFO] ✅ Processed: "Heat can be deadly, but sunshine itself? Science s..." → science
+[2026-07-18T12:24:15.108Z] [INFO] ✅ Processed: "Can a ‘power phrase’ turn a spineless worm like me..." → science
+[2026-07-18T12:24:33.436Z] [INFO] ✅ Processed: "At last, a proper excuse for monoglots to learn an..." → science
+[2026-07-18T12:24:49.230Z] [INFO] ✅ Processed: "Fungi: the invisible force protecting our planet –..." → science
+[2026-07-18T12:25:05.407Z] [INFO] ✅ Processed: "Is male testosterone in freefall? – podcast..." → science
+[2026-07-18T12:25:23.692Z] [INFO] ✅ Processed: "‘A break from scrolling’: how Gen Z fell in love w..." → science
+[2026-07-18T12:25:42.000Z] [INFO] ✅ Processed: "Robert Laidlow: Reality Eaters album review..." → science
+[2026-07-18T12:25:58.468Z] [INFO] ✅ Processed: "Deaf people excluded from gene-editing debate | Le..." → science
+[2026-07-18T12:26:14.159Z] [INFO] ✅ Processed: "Did you solve it? This TV show is flipping brillia..." → science
+[2026-07-18T12:26:29.520Z] [INFO] ✅ Processed: "Can you solve it? This TV show is flipping brillia..." → science
+[2026-07-18T12:26:46.633Z] [INFO] ✅ Processed: "Did you solve it? Dotty data and silly sentences..." → science
+[2026-07-18T12:27:05.292Z] [INFO] ✅ Processed: "Can you solve it? Dotty data and silly sentences..." → science
+[2026-07-18T12:27:23.760Z] [INFO] ✅ Processed: "'This one danced and snaked': Nasa astronaut captu..." → science
+[2026-07-18T12:27:43.759Z] [INFO] ✅ Processed: "Nasa unveils astronaut crew for Artemis III missio..." → science
+[2026-07-18T12:28:00.056Z] [INFO] ✅ Processed: "Blue mushrooms, shy trees and glowing seas: Beaker..." → science
+[2026-07-18T12:28:16.051Z] [INFO] ✅ Processed: "Interchangeable gripper..." → robotics
+[2026-07-18T12:28:30.173Z] [INFO] ✅ Processed: "Updates of my quadruped robot’s control algorithm...." → robotics
+[2026-07-18T12:28:47.337Z] [INFO] ✅ Processed: "Building a Real-Time UWB Localization System over ..." → robotics
+[2026-07-18T12:29:04.594Z] [INFO] ✅ Processed: "Mechanical engineering for robotics help with 3d p..." → robotics
+[2026-07-18T12:29:20.153Z] [INFO] ✅ Processed: "A Humanoid Company Backed by Eric Trump Is Prepari..." → robotics
+[2026-07-18T12:29:38.245Z] [INFO] ✅ Processed: "Invisible Drone..." → robotics
+[2026-07-18T12:29:53.319Z] [INFO] ✅ Processed: "- YouTube..." → robotics
+[2026-07-18T12:30:10.005Z] [INFO] ✅ Processed: "ROS News for the week of July 13th, 2026 - Communi..." → robotics
+[2026-07-18T12:30:28.991Z] [INFO] ✅ Processed: "We caught bad sequences in LIBERO by analyzing los..." → robotics
+[2026-07-18T12:30:29.997Z] [INFO] Rebuilding 1200+ vintage pages with Monetag & SEO/GEO optimization...
+[2026-07-18T12:30:32.214Z] [INFO] ══════ PIPELINE COMPLETE: 50 articles in 827.9s ══════
