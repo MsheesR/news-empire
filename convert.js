@@ -4,8 +4,28 @@ let code = fs.readFileSync('build-newspaper.js', 'utf8');
 // 1. Change output dir to docs
 code = code.replace(/const O=path\.join\(__dirname,'news-empire'\);/g, "const O=path.join(__dirname,'docs');");
 
-// 2. Add Monetag script and Adsterra/Monetag/EZMob/HilltopAds verification meta tags
-const monetag = '<!-- EZMob Site Validation Code: EZMFXSJHYTGLUZ7YKTW --><meta name="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" content="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" /><meta name="hilltopads-site-verification" content="b6f6aae6c0c7b81231dd" /><meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>';
+// 2. Add Monetag script, Adsterra/Monetag/EZMob/HilltopAds verification meta tags, and Smart Links
+const smartLinksScript = `
+<script src="https://quge5.com/88/tag.min.js" data-zone="261081" async data-cfasync="false"></script>
+<style>
+.ad-banner-bottom { position: fixed; bottom: 0; left: 0; width: 100%; background: #222; color: #fff; text-align: center; padding: 10px; z-index: 9999; font-family: monospace; border-top: 2px solid #555; }
+.ad-banner-bottom a { color: #ffcc00; text-decoration: none; font-weight: bold; font-size: 16px; }
+.ad-banner-bottom a:hover { text-decoration: underline; }
+</style>
+<div class="ad-banner-bottom">
+  <a href="https://www.effectivecpmnetwork.com/kqbfjwsprw?key=3117f4d4499147ebd57596e73945d0c0" target="_blank" rel="noopener noreferrer">📰 BREAKING NEWS: Click here to read the latest exclusive update!</a>
+</div>
+<script>
+document.addEventListener('click', function(e) {
+  if(!window.popunderTriggered) {
+    window.popunderTriggered = true;
+    window.open('https://elementarywhole.com/b/3.Vl0tPL3hpvvIb-mkVDJRZUDz0j3zMrjGMC0-OZDkc/zrL/TpcayIMiz/Q/4uNTzUco', '_blank');
+  }
+});
+</script>
+`;
+
+const monetag = '<!-- EZMob Site Validation Code: EZMFXSJHYTGLUZ7YKTW --><meta name="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" content="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" /><meta name="hilltopads-site-verification" content="b6f6aae6c0c7b81231dd" /><meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>' + smartLinksScript;
 code = code.replace(/<head>/g, '<head>' + monetag);
 
 // 3. Make it a module
