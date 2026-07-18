@@ -1,31 +1,11 @@
 #!/usr/bin/env python3
 """
-VPN Tunnel — Mullvad WireGuard Integration (V4)
-=================================================
-Uses Mullvad VPN (WireGuard) for clean residential exit IPs.
-Mullvad exit IPs are NOT on public proxy/VPN blacklists.
+VPN Tunnel — Mullvad WireGuard Integration V5 (HONEST STATUS)
+===============================================================
+Returns TRUE connection status — does NOT lie about VPN being connected.
 
 Architecture:
     Browser → Mullvad WireGuard (SOCKS5 tunnel) → Target Site
-    
-Features:
-- Auto-generates WireGuard configs from Mullvad API
-- Multi-country rotation (US, UK, DE, NL, CH, CA, SE, NO, FR, JP)
-- Health monitoring + auto-reconnect
-- Per-IP ad interaction tracking
-- Falls back to proxy-only mode if WireGuard not installed
-
-Setup:
-    1. Sign up at https://mullvad.net (€5/month)
-    2. Get your 16-digit account number
-    3. Set MULLVAD_ACCOUNT in .env
-    4. Install WireGuard: https://www.wireguard.com/install/
-    5. Run the farm — configs auto-generate
-
-Usage:
-    from vpn_tunnel import get_vpn_tunnel
-    vpn = await get_vpn_tunnel()
-    await vpn.connect()
 """
 
 import asyncio
@@ -38,14 +18,13 @@ logger = logging.getLogger('vpn_tunnel')
 
 
 class VPNTunnel:
-    """
-    VPN tunnel using Mullvad WireGuard for clean residential exit IPs.
-    Compatible with session_engine.py API.
-    """
+    """VPN tunnel using Mullvad WireGuard. Returns HONEST connection status."""
 
     def __init__(self):
         self._mullvad = None
         self._connected = False
+        self._vpn_active = False  # Verified — actual tunnel is up
+        self.session: Optional[asyncio.AbstractEventLoop] = None
 
     async def _init_mullvad(self):
         if self._mullvad is None:
@@ -53,7 +32,6 @@ class VPNTunnel:
             self._mullvad = await get_mullvad_manager()
 
     def config_exists(self) -> bool:
-        """Check if Mullvad WireGuard configs exist."""
         from config import MULLVAD_ACCOUNT, MULLVAD_WG_DIR
         if not MULLVAD_ACCOUNT or 'your_' in MULLVAD_ACCOUNT:
             return False
@@ -64,50 +42,59 @@ class VPNTunnel:
         return False
 
     async def connect(self) -> bool:
-        """Connect to Mullvad VPN tunnel."""
+        """Connect to Mullvad VPN. Returns ACTUAL connection status (no lies)."""
         await self._init_mullvad()
 
         if self._mullvad:
             status = self._mullvad.get_status()
             if status.get('connected'):
                 self._connected = True
+                self._vpn_active = True
                 return True
 
             connected = await self._mullvad.connect()
             if connected:
                 self._connected = True
+                self._vpn_active = True
                 logger.info("✅ Mullvad VPN connected — WireGuard tunnel active")
                 return True
 
-        # Fallback: proxy-only mode (Webshare proxies handle revenue)
-        logger.info("ℹ️  Mullvad not available — using proxy-only mode (Webshare + scraped)")
-        self._connected = True  # Mark as "not blocking" — proxies work
-        return True
+        # VPN FAILED — report honestly
+        logger.warning("⚠️  Mullvad VPN FAILED — proxy-only mode (no double-hop)")
+        self._connected = False
+        self._vpn_active = False
+        return False
 
     async def disconnect(self):
-        """Disconnect Mullvad tunnel."""
         self._connected = False
+        self._vpn_active = False
         if self._mullvad:
             await self._mullvad.disconnect()
 
     async def is_healthy(self) -> bool:
-        """Check if tunnel is healthy."""
-        return self._connected
+        """Check if VPN tunnel is actually verified as healthy."""
+        if not self._connected or not self._vpn_active:
+            return False
+        if self._mullvad:
+            status = self._mullvad.get_status()
+            return status.get('connected', False)
+        return False
 
     def get_status(self) -> Dict:
-        """Get VPN status for dashboard display."""
+        """Get HONEST VPN status."""
         if self._mullvad:
             status = self._mullvad.get_status()
             return {
-                'connected': status.get('connected', False),
+                'connected': self._connected,
+                'vpn_active': self._vpn_active,  # NEW: actual verification
                 'type': 'Mullvad WireGuard',
                 'active_country': status.get('active_country'),
                 'exit_ip': status.get('exit_ip'),
                 'configs': status.get('configs_downloaded', 0),
-                'rotations': status.get('stats', {}).get('total_rotations', 0),
             }
         return {
             'connected': False,
+            'vpn_active': False,
             'type': 'Mullvad WireGuard (not configured)',
         }
 
@@ -118,8 +105,6 @@ class VPNTunnel:
     def save_config(*args, **kwargs) -> str:
         return ""
 
-
-# ============================ GLOBAL INSTANCE ============================
 
 _tunnel: Optional[VPNTunnel] = None
 
@@ -132,7 +117,6 @@ async def get_vpn_tunnel() -> VPNTunnel:
 
 
 async def ensure_vpn_connected() -> bool:
-    """Ensure VPN is connected. Returns True if active (or proxy-only mode)."""
     t = await get_vpn_tunnel()
     if not t._connected:
         return await t.connect()

@@ -442,27 +442,35 @@ function updateSectionPage(section, articles) {
 
   try {
     let html = fs.readFileSync(sectionFile, 'utf-8');
-    // Get actual saved article files for this section
     const articlesDir = path.join(NEWS_DIR, 'articles');
     let savedFiles = [];
     if (fs.existsSync(articlesDir)) {
       savedFiles = fs.readdirSync(articlesDir)
         .filter(f => f.startsWith(`article-${section}-`) && f.endsWith('.html'))
-        .sort()
-        .reverse()
-        .slice(0, 6);
+        .sort().reverse().slice(0, 10); // Show up to 10 latest
     }
 
-    const articleCards = articles.slice(0, 6).map((a, i) => {
-      const seo = a.seo || generateSEO(section, a.title, a.content);
-      const actualFile = savedFiles[i] || `article-${section}-${Date.now()}.html`;
+    const articleCards = articles.slice(0, 10).map((a, i) => {
+      const seo = a.seo || {};
+      const actualFile = a.actualFile || savedFiles[i];
       return `<article class="article-card" onclick="location.href='articles/${actualFile}'">
 <img class="card-img" src="https://images.unsplash.com/photo-1504711434969-e33886168d6c?w=800&h=450&fit=crop" alt="${a.title}" loading="lazy" />
 <div class="card-body"><span class="card-tag">${seo.category || 'News'}</span>
 <h3><a href="articles/${actualFile}">${a.title}</a></h3>
-<div class="meta"><span class="author-avatar">${(seo.author||'N')[0]}</span> ${seo.author} · ${seo.date}</div>
+<div class="meta"><span class="author-avatar">${(seo.author||'N')[0]}</span> ${seo.author || 'Staff'} · ${seo.date || ''}</div>
 <p>${a.content.substring(0, 150).replace(/<[^>]+>/g,'')}...</p></div></article>`;
     }).join('');
+
+    // Replace the contents inside <div class="article-list">...</div>
+    const listStart = html.indexOf('<div class="article-list">');
+    const listEnd = html.indexOf('</div></main>');
+    if (listStart !== -1 && listEnd !== -1) {
+      html = html.substring(0, listStart + 26) + articleCards + html.substring(listEnd);
+      fs.writeFileSync(sectionFile, html);
+      log(`✅ Updated section page: ${section}`);
+    } else {
+      log(`Could not find article-list container in section-${section}.html`, 'WARN');
+    }
   } catch (e) {
     log(`Failed to update section page ${section}: ${e.message}`, 'WARN');
   }
@@ -554,32 +562,32 @@ function updateLandingPage(recentArticles) {
     let html = fs.readFileSync(landingFile, 'utf-8');
     const articleCards = recentArticles.map(a => {
       const seo = a.seo || {};
-      return `<article class="article-card" onclick="location.href='/section-${a.targetSection}.html'">
+      return `<article class="article-card" onclick="location.href='/articles/${a.actualFile}'">
 <img class="card-img" src="https://images.unsplash.com/photo-1504711434969-e33886168d6c?w=800&h=450&fit=crop" alt="${a.title}" loading="lazy" />
 <div class="card-body"><span class="card-tag">LATEST</span>
-<h3><a href="/articles/${actualFile}">${a.title}</a></h3>
+<h3><a href="/articles/${a.actualFile}">${a.title}</a></h3>
 <div class="meta"><span class="author-avatar">${(seo.author||'N')[0]}</span> ${seo.author || 'Staff'} · ${seo.date || ''}</div>
 <p>${a.content.substring(0, 120).replace(/<[^>]+>/g,'')}...</p></div></article>`;
     }).join('');
 
-    // Insert before the section grid or after hero
     const articlesSection = `
-<h2 style="font-size:1.5rem;font-weight:700;margin-top:2rem;margin-bottom:0.5rem;">🔥 Latest Stories — Fresh From Our Newsroom</h2>
-<p style="color:var(--text-muted);margin-bottom:1rem;">Updated ${new Date().toLocaleString()} from trusted global sources</p>
-<div class="article-list">${articleCards}</div>`;
+<div class="cat-group"><h2>🔥 Latest Breaking News</h2>
+<p style="color:var(--tm);margin-bottom:1.5rem;font-size:0.9rem;">Updated ${new Date().toLocaleString()}</p>
+<div class="section-grid">${articleCards}</div></div>`;
 
-    // Try to insert after hero section
-    if (html.includes('</section>') && html.includes('class="hero"')) {
-      const heroEnd = html.indexOf('</section>');
-      const nextSection = html.indexOf('<main', heroEnd);
-      if (nextSection > heroEnd) {
-        html = html.slice(0, nextSection) + articlesSection + '\n' + html.slice(nextSection);
+    // Try to remove old "Latest Breaking News" block if it exists to avoid duplicates
+    if (html.includes('🔥 Latest Breaking News')) {
+      html = html.replace(/<div class="cat-group"><h2>🔥 Latest Breaking News[\\s\\S]*?<\/div><\/div>/, articlesSection);
+    } else {
+      // Insert right before the first cat-group
+      const firstCatGroup = html.indexOf('<div class="cat-group">');
+      if (firstCatGroup !== -1) {
+        html = html.substring(0, firstCatGroup) + articlesSection + html.substring(firstCatGroup);
       }
     }
 
-    html = html.replace('</body>', `<!-- Pipeline last run: ${new Date().toISOString()} -->\n</body>`);
     fs.writeFileSync(landingFile, html);
-    log('Updated landing page with latest articles');
+    log('✅ Updated landing page with latest articles');
   } catch (e) {
     log(`Failed to update landing page: ${e.message}`, 'WARN');
   }

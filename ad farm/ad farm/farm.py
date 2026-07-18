@@ -554,6 +554,21 @@ async def farm_loop():
                 logger.info(f"   {new_count} new proxies verified")
                 last_pool_refresh = time.time()
             
+            # Health monitor check (auto-stop on critical failures)
+            from health_monitor import get_health_monitor
+            health = get_health_monitor()
+            should_stop, stop_reason = await health.check_all()
+            health.check_session_rate(stats.total_sessions, stats.successful_sessions)
+            if should_stop:
+                logger.critical(stop_reason)
+                logger.critical("🛑 AUTO-STOPPING FARM to prevent detection!")
+                break
+            # Log health if any component is unhealthy
+            health_status = health.get_status()
+            unhealthy = [name for name, c in health_status.get('components', {}).items() if not c['healthy']]
+            if unhealthy:
+                logger.warning(f"⚠️  Unhealthy components: {', '.join(unhealthy)}")
+            
             # Account health check every 30 min
             from survival_integration import get_survival_integrator
             survival = await get_survival_integrator()
