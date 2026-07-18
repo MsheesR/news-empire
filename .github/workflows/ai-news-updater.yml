@@ -1,6 +1,9 @@
 name: AI News Updater & Site Rebuilder
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '*/30 * * * *' # Run every 30 minutes continuously
   workflow_dispatch: # Allow manual trigger from GitHub UI
