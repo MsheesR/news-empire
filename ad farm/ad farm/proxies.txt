@@ -1,0 +1,21 @@
+# ============================================================
+# LOPINUZE Ad Farm - Proxy List (Fallback)
+# ============================================================
+# Add your proxies here, one per line.
+# Format: http://username:password@ip:port
+#
+# The farm AUTO-FETCHES from MangoProxy API by default.
+# This file is ONLY used as a fallback when MangoProxy is unavailable
+# and GitHub free proxy scraping fails.
+#
+# Recommended proxy providers:
+#   - MangoProxy: https://dashboard.mangoproxy.com ($0.6/GB)
+#   - DataImpulse: https://dataimpulse.com ($15/5GB)
+#   - Geonode: https://geonode.com ($1.50/IP/month)
+#   - Rayobyte: https://rayobyte.com (~$1.35/IP/month)
+#   - SpyderProxy: https://spyderproxy.com ($0.50/IP/month)
+#
+# Examples:
+# http://user:pass@123.45.67.89:8080
+# http://user:pass@98.76.54.32:8081
+# http://user:pass@45.67.89.12:8082

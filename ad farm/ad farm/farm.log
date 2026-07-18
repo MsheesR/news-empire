@@ -1,0 +1,516 @@
+2026-07-18 08:05:26 [INFO] farm: =================================================================
+2026-07-18 08:05:26 [INFO] farm: 🚜 LOPINUZE AD FARM V3 STARTING
+2026-07-18 08:05:26 [INFO] farm:    Site:       https://LOPINUZE.2BD.NET
+2026-07-18 08:05:26 [INFO] farm:    Sections:   52
+2026-07-18 08:05:26 [INFO] farm:    Workers:    10
+2026-07-18 08:05:26 [INFO] farm:    GPU:        Enabled
+2026-07-18 08:05:26 [INFO] farm:    Hours:      09:00 - 23:00
+2026-07-18 08:05:26 [INFO] farm:    Dashboard:  http://127.0.0.1:5000
+2026-07-18 08:05:26 [INFO] farm: =================================================================
+2026-07-18 08:05:26 [WARNING] config: HILLTOPADS_PUBLISHER_ID not set — ad revenue won't work
+2026-07-18 08:05:26 [INFO] farm: Initializing subsystems...
+2026-07-18 08:05:31 [INFO] proxy_filter: Stage 0: Fetched 216016 raw proxy URLs from 37 sources
+2026-07-18 08:05:36 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:05:39 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:05:39 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:05:41 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:05:46 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:06:24 [INFO] proxy_filter: Verified 14/5000 proxies (0.3% pass rate)
+2026-07-18 08:06:24 [INFO] proxy_filter: Pipeline complete. Pool: 14/14 working. Tiers: {'C': {'total': 1, 'avg_latency': 656, 'working': 1}, 'F': {'total': 13, 'avg_latency': 2830, 'working': 13}}
+2026-07-18 08:06:24 [INFO] farm: ✅ Proxy pool: 14 working / 14 total
+2026-07-18 08:06:55 [WARNING] vpn_tunnel: VPN Gate fetch failed: 
+2026-07-18 08:06:55 [INFO] vpn_tunnel: VPN Gate: 0 servers available
+2026-07-18 08:06:55 [WARNING] vpn_tunnel: No VPN Gate servers available. Check internet connection.
+2026-07-18 08:06:55 [INFO] farm: ✅ VPN: Config exists but not connected
+2026-07-18 08:06:55 [INFO] farm: ✅ Dashboard: http://127.0.0.1:5000
+2026-07-18 08:06:55 [INFO] farm: 🚀 10 workers running concurrently
+2026-07-18 08:06:55 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-07-18 08:06:55 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-18 08:08:55 [INFO] farm:    Proxy: 14/14 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 13, 'working': 13}}
+2026-07-18 08:10:55 [INFO] farm:    Proxy: 14/14 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 13, 'working': 13}}
+2026-07-18 08:12:05 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:05] "GET / HTTP/1.1" 200 -
+2026-07-18 08:12:05 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:05] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:05 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-18 08:12:10 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:10] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:15 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:15] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:20 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:20] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:25 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:25] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:30 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:30] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:35 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:35] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:40 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:40] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:45 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:45] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:50 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:50] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:12:55 [INFO] farm:    Proxy: 14/14 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 13, 'working': 13}}
+2026-07-18 08:12:55 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:12:55] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:00 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:00] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:05 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:05] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:10 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:10] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:15 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:15] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:20 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:20] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:25 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:25] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:30 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:30] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:35 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:35] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:40 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:40] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:45 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:45] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:50 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:50] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:13:55 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:13:55] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:00 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:00] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:05 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:05] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:10 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:10] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:15 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:15] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:20 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:20] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:25 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:25] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:30 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:30] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:35 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:35] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:40 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:40] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:45 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:45] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:50 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:50] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:14:55 [INFO] farm:    Proxy: 14/14 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 13, 'working': 13}}
+2026-07-18 08:14:55 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:14:55] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:00 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:00] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:05 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:05] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:10 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:10] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:15 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:15] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:20 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:20] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:25 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:25] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:30 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:30] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:35 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:35] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:40 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:40] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:45 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:45] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:50 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:50] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:15:55 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:15:55] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:00 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:00] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:05 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:05] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:10 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:10] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:15 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:15] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:20 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:20] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:25 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:25] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:30 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:30] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:35 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:35] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:40 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:40] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:45 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:45] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:50 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:50] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:16:55 [INFO] farm:    Proxy: 14/14 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 13, 'working': 13}}
+2026-07-18 08:16:55 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:16:55] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:00 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:00] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:06 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:06] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:11 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:11] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:16 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:16] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:21 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:21] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:26 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:26] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:31 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:31] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:36 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:36] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:41 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:41] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:46 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:46] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:51 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:51] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:17:56 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:17:56] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:18:01 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:18:01] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:18:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:18:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:18:55 [INFO] farm:    Proxy: 14/14 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 13, 'working': 13}}
+2026-07-18 08:19:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:19:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:20:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:20:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:20:55 [INFO] farm:    Proxy: 14/14 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 13, 'working': 13}}
+2026-07-18 08:21:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:21:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:21:55 [INFO] farm: 🔄 Refreshing proxy pool...
+2026-07-18 08:22:03 [INFO] proxy_filter: Stage 0: Fetched 216826 raw proxy URLs from 37 sources
+2026-07-18 08:22:09 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:22:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:22:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:22:57 [INFO] proxy_filter: Verified 4/5000 proxies (0.1% pass rate)
+2026-07-18 08:22:57 [INFO] proxy_filter: Pipeline complete. Pool: 16/16 working. Tiers: {'C': {'total': 4, 'avg_latency': 714, 'working': 4}, 'F': {'total': 12, 'avg_latency': 2292, 'working': 12}}
+2026-07-18 08:22:57 [INFO] farm:    4 new proxies verified
+2026-07-18 08:23:27 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 12, 'working': 12}}
+2026-07-18 08:23:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:23:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:23:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:23:48] "GET / HTTP/1.1" 200 -
+2026-07-18 08:23:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:23:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:23:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:23:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:23:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:23:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:24:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:24:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:04 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:04] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:09 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:09] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:14 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:14] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:19 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:19] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:24 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:24] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:27 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 12, 'working': 12}}
+2026-07-18 08:25:29 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:29] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:34 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:34] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:39 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:39] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:44 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:44] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:49 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:49] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:25:54 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:25:54] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:26:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:26:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:26:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:26:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:27:27 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 12, 'working': 12}}
+2026-07-18 08:27:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:27:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:27:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:27:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:13] "GET / HTTP/1.1" 200 -
+2026-07-18 08:28:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:28:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:28:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:27 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 12, 'working': 12}}
+2026-07-18 08:29:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:29:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:29:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:30:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:30:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:27 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 12, 'working': 12}}
+2026-07-18 08:31:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:31:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:31:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:32:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:32:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:27 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 12, 'working': 12}}
+2026-07-18 08:33:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:33:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:33:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:34:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:34:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:27 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 12, 'working': 12}}
+2026-07-18 08:35:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:35:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:35:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:03 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:03] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:08 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:08] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:13 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:13] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:18 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:18] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:23 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:23] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:28 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:28] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:33 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:33] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:38 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:38] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:48 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:48] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:53 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:53] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:36:58 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:36:58] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:04 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:04] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:09 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:09] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:14 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:14] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:19 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:19] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:24 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:24] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:27 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 12, 'working': 12}}
+2026-07-18 08:37:29 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:29] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:34 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:34] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:39 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:39] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:44 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:44] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:49 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:49] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:54 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:54] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:37:57 [INFO] farm: 🔄 Refreshing proxy pool...
+2026-07-18 08:37:59 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:37:59] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:38:03 [INFO] proxy_filter: Stage 0: Fetched 216516 raw proxy URLs from 37 sources
+2026-07-18 08:38:07 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:38:08 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:38:10 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:38:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:38:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:38:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:38:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:38:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:38:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:38:52 [INFO] proxy_filter: Verified 12/5000 proxies (0.2% pass rate)
+2026-07-18 08:38:52 [INFO] proxy_filter: Pipeline complete. Pool: 16/16 working. Tiers: {'C': {'total': 1, 'avg_latency': 656, 'working': 1}, 'F': {'total': 15, 'avg_latency': 2285, 'working': 15}}
+2026-07-18 08:38:52 [INFO] farm:    12 new proxies verified
+2026-07-18 08:39:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:39:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:39:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:39:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:39:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:39:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:39:52 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:40:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:40:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:40:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:40:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:40:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:40:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:41:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:41:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:41:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:41:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:41:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:41:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:41:52 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:42:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:42:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:42:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:42:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:42:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:42:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:43:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:43:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:43:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:43:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:43:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:43:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:43:52 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:44:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:44:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:44:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:44:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:44:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:44:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:45:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:45:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:45:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:45:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:45:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:45:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:45:52 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:46:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:46:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:46:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:46:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:46:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:46:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:47:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:47:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:47:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:47:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:47:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:47:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:47:52 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:48:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:48:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:48:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:48:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:48:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:48:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:49:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:49:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:49:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:49:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:49:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:49:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:49:52 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:50:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:50:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:50:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:50:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:50:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:50:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:51:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:51:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:51:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:51:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:51:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:51:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:51:52 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:52:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:52:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:52:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:52:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:52:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:52:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:53:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:53:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:53:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:53:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:53:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:53:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:53:52 [INFO] farm:    Proxy: 16/16 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:53:52 [INFO] farm: 🔄 Refreshing proxy pool...
+2026-07-18 08:53:54 [INFO] proxy_filter: Stage 0: Fetched 217144 raw proxy URLs from 37 sources
+2026-07-18 08:54:03 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:54:05 [ERROR] asyncio: Exception in callback _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(ConnectionResetError())>
+Traceback (most recent call last):
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\moham\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-07-18 08:54:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:54:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:54:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:54:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:54:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:54:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:54:43 [INFO] proxy_filter: Verified 8/5000 proxies (0.2% pass rate)
+2026-07-18 08:54:43 [INFO] proxy_filter: Pipeline complete. Pool: 17/17 working. Tiers: {'B': {'total': 1, 'avg_latency': 485, 'working': 1}, 'C': {'total': 1, 'avg_latency': 656, 'working': 1}, 'F': {'total': 15, 'avg_latency': 2617, 'working': 15}}
+2026-07-18 08:54:43 [INFO] farm:    8 new proxies verified
+2026-07-18 08:55:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:55:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:55:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:55:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:55:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:55:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:56:13 [INFO] farm:    Proxy: 17/17 | Workers: 10 | Tiers: {'B': {'total': 1, 'working': 1}, 'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:56:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:56:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:56:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:56:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:56:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:56:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:57:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:57:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:57:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:57:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:57:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:57:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:58:13 [INFO] farm:    Proxy: 17/17 | Workers: 10 | Tiers: {'B': {'total': 1, 'working': 1}, 'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 08:58:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:58:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:58:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:58:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:58:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:58:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:59:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:59:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:59:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:59:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 08:59:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 08:59:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:00:13 [INFO] farm:    Proxy: 17/17 | Workers: 10 | Tiers: {'B': {'total': 1, 'working': 1}, 'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 09:00:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:00:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:00:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:00:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:00:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:00:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:01:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:01:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:01:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:01:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:01:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:01:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:01:55 [INFO] revenue_optimizer: Revenue Optimizer: 0 ad networks loaded (blended CPM: $0.00)
+2026-07-18 09:01:55 [WARNING] ai_behavior: DeepSeek API key not configured. Using randomized behavior (no AI).
+2026-07-18 09:02:09 [WARNING] smart_rotator: All candidate proxies failed TCP check! Triggering emergency refresh...
+2026-07-18 09:02:13 [INFO] farm:    Proxy: 17/17 | Workers: 10 | Tiers: {'B': {'total': 1, 'working': 1}, 'C': {'total': 1, 'working': 1}, 'F': {'total': 15, 'working': 15}}
+2026-07-18 09:02:14 [INFO] proxy_filter: Stage 0: Fetched 217244 raw proxy URLs from 37 sources
+2026-07-18 09:02:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:02:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:02:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:02:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:02:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:02:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:03:09 [INFO] proxy_filter: Verified 5/5000 proxies (0.1% pass rate)
+2026-07-18 09:03:09 [INFO] proxy_filter: Pipeline complete. Pool: 18/18 working. Tiers: {'C': {'total': 4, 'avg_latency': 589, 'working': 4}, 'F': {'total': 14, 'avg_latency': 2541, 'working': 14}}
+2026-07-18 09:03:09 [INFO] smart_rotator: Emergency proxy pool refresh completed
+2026-07-18 09:03:17 [WARNING] smart_rotator: All candidate proxies failed TCP check! Triggering emergency refresh...
+2026-07-18 09:03:21 [INFO] proxy_filter: Stage 0: Fetched 217244 raw proxy URLs from 37 sources
+2026-07-18 09:03:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:03:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:03:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:03:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:03:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:03:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:04:13 [INFO] farm:    Proxy: 18/18 | Workers: 10 | Tiers: {'C': {'total': 4, 'working': 4}, 'F': {'total': 14, 'working': 14}}
+2026-07-18 09:04:18 [INFO] proxy_filter: Verified 3/5000 proxies (0.1% pass rate)
+2026-07-18 09:04:19 [INFO] proxy_filter: Pipeline complete. Pool: 20/20 working. Tiers: {'C': {'total': 5, 'avg_latency': 602, 'working': 5}, 'F': {'total': 15, 'avg_latency': 2531, 'working': 15}}
+2026-07-18 09:04:19 [INFO] smart_rotator: Emergency proxy pool refresh completed
+2026-07-18 09:04:36 [WARNING] smart_rotator: All candidate proxies failed TCP check! Triggering emergency refresh...
+2026-07-18 09:04:42 [INFO] proxy_filter: Stage 0: Fetched 217058 raw proxy URLs from 37 sources
+2026-07-18 09:04:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:04:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:04:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:04:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:04:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:04:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:05:40 [INFO] proxy_filter: Verified 1/5000 proxies (0.0% pass rate)
+2026-07-18 09:05:40 [INFO] proxy_filter: Pipeline complete. Pool: 20/20 working. Tiers: {'C': {'total': 4, 'avg_latency': 628, 'working': 4}, 'F': {'total': 16, 'avg_latency': 2436, 'working': 16}}
+2026-07-18 09:05:41 [INFO] smart_rotator: Emergency proxy pool refresh completed
+2026-07-18 09:05:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:05:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:05:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:05:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:05:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:05:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:06:13 [INFO] farm:    Proxy: 14/20 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 19, 'working': 13}}
+2026-07-18 09:06:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:06:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:06:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:06:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:06:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:06:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:07:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:07:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:07:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:07:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:07:43 [INFO] werkzeug: 127.0.0.1 - - [18/Jul/2026 09:07:43] "GET /api/stats HTTP/1.1" 200 -
+2026-07-18 09:08:13 [INFO] farm:    Proxy: 3/20 | Workers: 10 | Tiers: {'C': {'total': 1, 'working': 1}, 'F': {'total': 19, 'working': 2}}

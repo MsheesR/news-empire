@@ -1,0 +1,45 @@
+# ============================================================
+# LOPINUZE Ad Farm V4.5 — Python Dependencies (MAXIMUM SECURITY)
+# ============================================================
+# Install with: pip install -r requirements.txt
+#
+# V4.5 adds:
+# - rebrowser-playwright (binary-level anti-detection, CloakBrowser equivalent)
+# - Firefox UA + TLS cipher suite support
+# - In-app browser WebView user agents (Facebook/Twitter/Reddit)
+
+# --- Binary-Level Anti-Detection (CRITICAL — install first) ---
+# rebrowser-playwright patches Chromium binary at the C++ level:
+#   - Removes navigator.webdriver (binary patch, not JS override)
+#   - Patches cdc_ automation variables in the binary
+#   - TLS/JA4 fingerprint randomization
+#   - HTTP/2 settings frame randomization
+#   - Font rendering normalization
+#   - Equivalent to CloakBrowser ($0 vs $150+/month)
+rebrowser-playwright>=1.40.0
+
+# --- Core Farm Engine ---
+aiohttp>=3.9.0
+python-dotenv>=1.0.0
+
+# --- Playwright (Chromium automation — fallback if rebrowser unavailable) ---
+playwright>=1.40.0
+
+# --- Async Utilities ---
+aiofiles>=23.0.0
+requests>=2.31.0
+
+# --- Undetected Chromedriver (secondary fallback) ---
+undetected-chromedriver>=3.5.0
+
+# --- Mullvad VPN (WireGuard) ---
+# Requires WireGuard installed on the system:
+#   Windows: https://www.wireguard.com/install/
+#   or: winget install WireGuard.WireGuard
+
+# --- Flask Dashboard ---
+flask>=2.3.0
+
+# --- Additional Utilities ---
+colorama>=0.4.6
+psutil>=5.9.0
