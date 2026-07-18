@@ -6,7 +6,7 @@ code = code.replace(/const O=path\.join\(__dirname,'news-empire'\);/g, "const O=
 
 // 2. Add Monetag script with double quotes
 const monetag = '<script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>';
-code = code.replace(/<head>/g, '<head>\n' + monetag);
+code = code.replace(/<head>/g, '<head>' + monetag);
 
 // 3. Make it a module
 code = code.split('if(fs.existsSync(O))fs.rmSync(O,{recursive:true,force:true});').join('function buildSite() {\nloadAiArticles();\nif(fs.existsSync(O))fs.rmSync(O,{recursive:true,force:true});');
@@ -71,6 +71,7 @@ code = code.replace(/<main class="container">'\+gs\+'<\/main>/, "<main class=\"c
 // Generate individual AI HTML articles inside buildSite() with GEO & internal interlinking
 const generateAiArticles = `
 // GENERATE AI ARTICLE PAGES WITH GEO & INTERNAL BACKLINKS
+const monetag = '<script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>';
 if (!fs.existsSync(path.join(O, 'articles'))) fs.mkdirSync(path.join(O, 'articles'), {recursive:true});
 for (const a of allAiArticles) {
   const sec = SECTIONS.find(s => s.s === a.targetSection) || SECTIONS[0];
@@ -105,6 +106,23 @@ for (const a of allAiArticles) {
   const html = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">' + monetag + '<title>' + t + ' – ' + S + '</title><meta name="description" content="' + (a.seo?.metaDesc || t) + '"><meta name="keywords" content="' + sec.n + ', technology news, market report, global updates"><meta name="author" content="' + author.name + '"><meta name="robots" content="index,follow"><meta name="geo.region" content="US-NY, GB-LND, EU, GLOBAL"><meta name="geo.placename" content="Global Desk"><meta property="og:title" content="' + t + '"><meta property="og:type" content="article"><meta property="og:url" content="https://lopinuze.online/articles/' + a.actualFile + '"><link rel="canonical" href="https://lopinuze.online/articles/' + a.actualFile + '"><script type="application/ld+json">' + jsonLd + '</script><style>' + CSS + '</style></head><body><header class="site-header"><div class="container"><a href="/index.html" class="logo">' + S + '</a><nav><ul class="nav-links"><li><a href="/index.html">Home</a></li><li><a href="/section-' + sec.s + '.html">' + sec.n + '</a></li><li><a href="/finance.html">Finance</a></li><li><a href="/section-world-news.html">World</a></li><li><a href="/section-tech.html">Tech</a></li></ul></nav>' + LANG + '</div></header><main><article class="article-detail"><div class="breadcrumb"><a href="/index.html">Home</a> &rsaquo; <a href="/section-' + sec.s + '.html">' + sec.n + '</a> &rsaquo; Article</div><div class="sec-tag">' + sec.n + ' · ANALYSIS</div><h1>' + t + '</h1><div class="byline"><strong>' + author.name + '</strong> · ' + d + ' · ' + rt + ' min read</div><div class="key-takeaways"><h4>Key Takeaways</h4><ul><li>Market data & verified insights on ' + sec.n + '</li><li>Expert analysis by ' + author.name + '</li><li>Internal coverage across 50 global news desks</li></ul></div><div class="content">' + formattedContent + '</div><div class="editor-note"><strong>Editor\\'s Note</strong> — Reviewed by ' + author.name + '. Based on reporting from trusted global wire services.</div><div class="author-bio"><div class="author-avatar" style="width:44px;height:44px;font-size:0.85rem">' + author.av + '</div><div><h4>' + author.name + '</h4><p style="font-size:0.68rem;color:var(--tm);margin-bottom:0.15rem">' + author.title + '</p><p style="font-size:0.75rem">Senior correspondent covering ' + sec.n.toLowerCase() + ' for ' + S + '.</p></div></div><div class="cat-group"><h2>Related Coverage & Internal Links</h2><div class="rel-posts">' + relPosts + '</div></div></article></main>' + FOOTER + '</body></html>';
   fs.writeFileSync(path.join(O, 'articles', a.actualFile), html);
 }
+
+// ALSO SYNC TO ROOT DIRECTORY FOR GITHUB PAGES ROOT COMPATIBILITY
+try {
+  const docsFiles = fs.readdirSync(O);
+  for (const f of docsFiles) {
+    if (f === 'articles') {
+      if (!fs.existsSync(path.join(__dirname, 'articles'))) fs.mkdirSync(path.join(__dirname, 'articles'), {recursive:true});
+      const artFiles = fs.readdirSync(path.join(O, 'articles'));
+      for (const af of artFiles) {
+        fs.copyFileSync(path.join(O, 'articles', af), path.join(__dirname, 'articles', af));
+      }
+    } else {
+      fs.copyFileSync(path.join(O, f), path.join(__dirname, f));
+    }
+  }
+  console.log('✅ Synced vintage newspaper to root directory for GitHub Pages root compatibility');
+} catch(e) { console.error('Root sync warning:', e.message); }
 `;
 code = code.replace(/console\.log\('\\n🎉 Complete! '\+String\(3\+1\+1\+sc\+ac\)\+' vintage newspaper pages\.'\);/, generateAiArticles + "\nconsole.log('\\n🎉 Complete!');");
 

@@ -1,11 +1,12 @@
 {
-  "totalArticles": 250,
-  "lastRun": "2026-07-18T10:50:44.111Z",
+  "totalArticles": 270,
+  "lastRun": "2026-07-18T11:49:07.039Z",
   "perSection": {
     "investing": 15,
-    "tech": 126,
+    "tech": 137,
     "science": 70,
     "world-news": 24,
-    "stock-market": 15
+    "stock-market": 15,
+    "gaming": 9
   }
 }

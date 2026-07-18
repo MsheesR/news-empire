@@ -120,3 +120,95 @@
 [2026-07-18T11:01:56.914Z] [INFO] ✅ Updated section page: science
 [2026-07-18T11:01:56.937Z] [INFO] ✅ Updated landing page with latest articles
 [2026-07-18T11:01:56.938Z] [INFO] ══════ PIPELINE COMPLETE: 15 articles in 214.5s ══════
+[2026-07-18T11:14:25.195Z] [INFO] 🚀 LOPINUZE Pipeline v2.0 — LOPINUZE.2BD.NET
+[2026-07-18T11:14:25.196Z] [INFO] 📡 Gemini 2.0 Flash (FREE) + DeepSeek V4 (fallback)
+[2026-07-18T11:14:25.197Z] [INFO] 📰 20 RSS sources configured
+[2026-07-18T11:14:25.197Z] [INFO] ══════ STARTING PIPELINE RUN ══════
+[2026-07-18T11:14:26.288Z] [INFO] Fetched 25 from https://www.reddit.com/r/technology/.rss
+[2026-07-18T11:14:27.522Z] [INFO] Fetched 0 from https://www.reddit.com/r/CryptoCurrency/.rss
+[2026-07-18T11:14:29.407Z] [INFO] Fetched 42 from https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+[2026-07-18T11:14:31.464Z] [INFO] Fetched 20 from https://hnrss.org/frontpage?points=20
+[2026-07-18T11:14:33.615Z] [INFO] Fetched 20 from https://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+[2026-07-18T11:14:34.780Z] [INFO] Fetched 50 from https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+[2026-07-18T11:14:36.248Z] [INFO] Fetched 0 from https://www.reddit.com/r/StockMarket/.rss
+[2026-07-18T11:14:37.949Z] [INFO] Fetched 30 from https://feeds.bbci.co.uk/news/world/rss.xml
+[2026-07-18T11:14:38.964Z] [INFO] Fetched 187 total articles from RSS feeds
+[2026-07-18T11:14:40.026Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"generativelanguage.googleapis.com","method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"}}]}
+[2026-07-18T11:14:40.027Z] [INFO] Gemini failed for "Redditors Are Celebrating the Cutting Down of Floc...", trying DeepSeek...
+[2026-07-18T11:14:48.064Z] [INFO] ✅ Processed: "Redditors Are Celebrating the Cutting Down of Flock Surveill..." → tech
+[2026-07-18T11:14:51.863Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:14:51.863Z] [INFO] Gemini failed for "Terrified Tech Execs Are Traveling With Armed Body...", trying DeepSeek...
+[2026-07-18T11:14:59.624Z] [INFO] ✅ Processed: "Terrified Tech Execs Are Traveling With Armed Bodyguards as ..." → tech
+[2026-07-18T11:15:02.556Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:15:02.556Z] [INFO] Gemini failed for "Kevin O’Leary claimed opposition to his Utah data ...", trying DeepSeek...
+[2026-07-18T11:15:10.461Z] [INFO] ✅ Processed: "Kevin O’Leary claimed opposition to his Utah data center was..." → tech
+[2026-07-18T11:15:13.391Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:15:13.391Z] [INFO] Gemini failed for "US president promoted companies on Truth Social da...", trying DeepSeek...
+[2026-07-18T11:15:21.420Z] [INFO] ✅ Processed: "US president promoted companies on Truth Social days after b..." → tech
+[2026-07-18T11:15:24.364Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:15:24.364Z] [INFO] Gemini failed for "SpaceX stock drops to a new low and loses $1 trill...", trying DeepSeek...
+[2026-07-18T11:15:32.305Z] [INFO] ✅ Processed: "SpaceX stock drops to a new low and loses $1 trillion in val..." → tech
+[2026-07-18T11:15:35.271Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"generativelanguage.googleapis.com","method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"}}]}
+[2026-07-18T11:15:35.271Z] [INFO] Gemini failed for "'Whoever came up with this is a massive idiot': LG...", trying DeepSeek...
+[2026-07-18T11:15:43.184Z] [INFO] ✅ Processed: "'Whoever came up with this is a massive idiot': LG's gaming ..." → tech
+[2026-07-18T11:15:46.100Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:15:46.101Z] [INFO] Gemini failed for "Flock Said Its Cameras Don't Track People. Then a ...", trying DeepSeek...
+[2026-07-18T11:15:54.651Z] [INFO] ✅ Processed: "Flock Said Its Cameras Don't Track People. Then a Reporter P..." → tech
+[2026-07-18T11:15:57.577Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:15:57.577Z] [INFO] Gemini failed for "White House teleprompter operator made more than $...", trying DeepSeek...
+[2026-07-18T11:16:05.831Z] [INFO] ✅ Processed: "White House teleprompter operator made more than $100,000 be..." → tech
+[2026-07-18T11:16:08.780Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:16:08.781Z] [INFO] Gemini failed for "$100,000 monthly fee for fast feed of US president...", trying DeepSeek...
+[2026-07-18T11:16:17.124Z] [INFO] ✅ Processed: "$100,000 monthly fee for fast feed of US president’s posts —..." → tech
+[2026-07-18T11:16:19.622Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"generativelanguage.googleapis.com","method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent"}}]}
+[2026-07-18T11:16:19.623Z] [INFO] Gemini failed for "With a $15 billion net worth, Palantir CEO Alex Ka...", trying DeepSeek...
+[2026-07-18T11:16:27.723Z] [INFO] ✅ Processed: "With a $15 billion net worth, Palantir CEO Alex Karp predict..." → tech
+[2026-07-18T11:16:30.655Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:16:30.656Z] [INFO] Gemini failed for "US president says ABC and NBC should lose broadcas...", trying DeepSeek...
+[2026-07-18T11:19:27.612Z] [INFO] 🚀 LOPINUZE Pipeline v2.0 — LOPINUZE.2BD.NET
+[2026-07-18T11:19:27.613Z] [INFO] 📡 Gemini 2.0 Flash (FREE) + DeepSeek V4 (fallback)
+[2026-07-18T11:19:27.614Z] [INFO] 📰 20 RSS sources configured
+[2026-07-18T11:19:27.614Z] [INFO] ══════ STARTING PIPELINE RUN ══════
+[2026-07-18T11:19:28.130Z] [INFO] Fetched 20 from https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+[2026-07-18T11:19:30.324Z] [INFO] Fetched 25 from https://www.reddit.com/r/technology/.rss
+[2026-07-18T11:19:31.545Z] [INFO] Fetched 0 from https://www.reddit.com/r/Futurology/.rss
+[2026-07-18T11:19:33.479Z] [INFO] Fetched 53 from https://feeds.bbci.co.uk/news/business/rss.xml
+[2026-07-18T11:19:34.853Z] [INFO] Fetched 50 from https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+[2026-07-18T11:19:36.133Z] [INFO] Fetched 30 from https://feeds.bbci.co.uk/news/world/rss.xml
+[2026-07-18T11:19:37.846Z] [INFO] Fetched 20 from https://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+[2026-07-18T11:19:39.586Z] [INFO] Fetched 0 from https://www.reddit.com/r/gadgets/.rss
+[2026-07-18T11:19:40.594Z] [INFO] Fetched 198 total articles from RSS feeds
+[2026-07-18T11:19:43.073Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:19:43.074Z] [INFO] Gemini failed for "China’s Moonshot AI Unveils Kimi Model, Threatenin...", trying DeepSeek...
+[2026-07-18T11:19:54.742Z] [INFO] ✅ Processed: "China’s Moonshot AI Unveils Kimi Model, Threatening America’..." → tech
+[2026-07-18T11:46:12.921Z] [INFO] 🚀 LOPINUZE Pipeline v3.0 — lopinuze.online
+[2026-07-18T11:46:12.922Z] [INFO] ══════ STARTING PIPELINE RUN ══════
+[2026-07-18T11:46:14.055Z] [INFO] Fetched 25 from https://www.reddit.com/r/gaming/.rss
+[2026-07-18T11:46:14.588Z] [INFO] Fetched 0 from https://www.reddit.com/r/CryptoCurrency/.rss
+[2026-07-18T11:46:15.332Z] [INFO] Fetched 52 from https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+[2026-07-18T11:46:15.782Z] [INFO] Fetched 28 from https://rss.nytimes.com/services/xml/rss/nyt/US.xml
+[2026-07-18T11:46:16.898Z] [INFO] Fetched 45 from https://www.theguardian.com/world/rss
+[2026-07-18T11:46:17.419Z] [INFO] Fetched 0 from https://www.reddit.com/r/worldnews/.rss
+[2026-07-18T11:46:17.875Z] [INFO] Fetched 30 from https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+[2026-07-18T11:46:18.406Z] [INFO] Fetched 0 from https://www.reddit.com/r/science/.rss
+[2026-07-18T11:46:19.875Z] [INFO] Fetched 52 from https://feeds.bbci.co.uk/news/health/rss.xml
+[2026-07-18T11:46:22.075Z] [INFO] Fetched 0 from https://www.reddit.com/r/esports/.rss
+[2026-07-18T11:46:22.611Z] [INFO] Fetched 0 from https://www.reddit.com/r/space/.rss
+[2026-07-18T11:46:23.207Z] [INFO] Fetched 54 from https://feeds.bbci.co.uk/news/business/rss.xml
+[2026-07-18T11:46:23.735Z] [INFO] Fetched 0 from https://www.reddit.com/r/finance/.rss
+[2026-07-18T11:46:24.267Z] [INFO] Fetched 0 from https://www.reddit.com/r/gadgets/.rss
+[2026-07-18T11:46:25.491Z] [INFO] Fetched 20 from https://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+[2026-07-18T11:46:25.801Z] [INFO] Fetched 306 total articles from RSS feeds
+[2026-07-18T11:46:38.428Z] [INFO] ✅ Processed: "Self Promotion Saturday! Small streamer? Just gett..." → gaming
+[2026-07-18T11:46:56.696Z] [INFO] ✅ Processed: "Self Promotion Saturday! Small streamer? Just gett..." → gaming
+[2026-07-18T11:47:13.103Z] [INFO] ✅ Processed: "Business model..." → gaming
+[2026-07-18T11:47:26.311Z] [INFO] ✅ Processed: "Jennifer English Steps Down From Tides of Annihila..." → gaming
+[2026-07-18T11:47:40.894Z] [INFO] ✅ Processed: "The New Call Of Duty Black Ops 2 Port Had Over 5 M..." → gaming
+[2026-07-18T11:47:55.198Z] [INFO] ✅ Processed: "Marathon Game Director Joe Ziegler Leaves Bungie..." → gaming
+[2026-07-18T11:48:15.271Z] [WARN] DeepSeek API call failed: fetch failed
+[2026-07-18T11:48:15.271Z] [INFO] DeepSeek unavailable for "The new Marvel's Wolverine cinematic tra...", trying Gemini...
+[2026-07-18T11:48:15.667Z] [WARN] Gemini error: {"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent","service":"generativelanguage.googleapis.com"}}]}
+[2026-07-18T11:48:15.668Z] [WARN] Both AI engines failed for "The new Marvel's Wolverine cinematic tra...", skipping
+[2026-07-18T11:48:31.995Z] [INFO] ✅ Processed: "Nintendo Gains A Rep Boost As Sony &amp; Microsoft..." → gaming
+[2026-07-18T11:48:48.598Z] [INFO] ✅ Processed: "TES6 in full development, Fallout 5 in pre-develop..." → gaming
+[2026-07-18T11:49:07.039Z] [INFO] ✅ Processed: "Assassin’s Creed Black Flag Resynced Has Sold Over..." → gaming
