@@ -7,6 +7,18 @@ code = code.replace(/const O=path\.join\(__dirname,'news-empire'\);/g, "const O=
 // 2. Add Monetag script, Adsterra/Monetag/EZMob/HilltopAds verification meta tags, and Smart Links
 const smartLinksScript = `
 <script src="https://quge5.com/88/tag.min.js" data-zone="261081" async data-cfasync="false"></script>
+<script>
+(function(fvovmd){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = fvovmd || {};
+s.src = "\\/\\/sadpicture.com\\/c\\/Dh9B6nb.2\\/5Ml\\/SNWTQj9kNlzVILzINwDQgn3zMoyD0\\/3\\/MUj_M\\/0\\/O\\/DSc\\/3Z";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+</script>
 <style>
 .ad-banner-bottom { position: fixed; bottom: 0; left: 0; width: 100%; background: #222; color: #fff; text-align: center; padding: 10px; z-index: 9999; font-family: monospace; border-top: 2px solid #555; }
 .ad-banner-bottom a { color: #ffcc00; text-decoration: none; font-weight: bold; font-size: 16px; }
