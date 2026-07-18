@@ -2,7 +2,7 @@ name: AI News Updater & Site Rebuilder
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Run every 2 hours continuously
+    - cron: '*/30 * * * *' # Run every 30 minutes continuously
   workflow_dispatch: # Allow manual trigger from GitHub UI
 
 permissions:

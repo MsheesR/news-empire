@@ -10,7 +10,7 @@ code = code.replace(/<head>/g, '<head>' + monetag);
 
 // 3. Make it a module
 code = code.split('if(fs.existsSync(O))fs.rmSync(O,{recursive:true,force:true});').join('function buildSite() {\nloadAiArticles();\nif(fs.existsSync(O))fs.rmSync(O,{recursive:true,force:true});');
-code = code.split("fs.writeFileSync(path.join(O,'disclaimer.html'),disc);").join("fs.writeFileSync(path.join(O,'disclaimer.html'),disc);\nif(fs.existsSync('CNAME')) fs.copyFileSync('CNAME', path.join(O, 'CNAME'));\nif(fs.existsSync('sw.js')) fs.copyFileSync('sw.js', path.join(O, 'sw.js'));");
+code = code.split("fs.writeFileSync(path.join(O,'disclaimer.html'),disc);").join("fs.writeFileSync(path.join(O,'disclaimer.html'),disc);\nif(fs.existsSync('CNAME')) fs.copyFileSync('CNAME', path.join(O, 'CNAME'));\nif(fs.existsSync('sw.js')) fs.copyFileSync('sw.js', path.join(O, 'sw.js'));\nif(fs.existsSync('9a0153ac34adb4656ff5.txt')) fs.copyFileSync('9a0153ac34adb4656ff5.txt', path.join(O, '9a0153ac34adb4656ff5.txt'));");
 code += '\n}\nmodule.exports = { buildSite };\n';
 
 // Define loadAiArticles and allAiArticles at the top level

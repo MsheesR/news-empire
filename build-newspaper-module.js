@@ -262,6 +262,7 @@ if(fs.existsSync(O))fs.rmSync(O,{recursive:true,force:true});fs.mkdirSync(O,{rec
 fs.writeFileSync(path.join(O,'disclaimer.html'),disc);
 if(fs.existsSync('CNAME')) fs.copyFileSync('CNAME', path.join(O, 'CNAME'));
 if(fs.existsSync('sw.js')) fs.copyFileSync('sw.js', path.join(O, 'sw.js'));
+if(fs.existsSync('9a0153ac34adb4656ff5.txt')) fs.copyFileSync('9a0153ac34adb4656ff5.txt', path.join(O, '9a0153ac34adb4656ff5.txt'));
 fs.writeFileSync(path.join(O,'privacy-policy.html'),priv);
 fs.writeFileSync(path.join(O,'terms.html'),terms);
 fs.writeFileSync(path.join(O,'index.html'),landing());
