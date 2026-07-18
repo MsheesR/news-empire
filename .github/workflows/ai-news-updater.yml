@@ -5,6 +5,9 @@ on:
     - cron: '0 */2 * * *' # Run every 2 hours continuously
   workflow_dispatch: # Allow manual trigger from GitHub UI
 
+permissions:
+  contents: write
+
 jobs:
   update-news:
     runs-on: ubuntu-latest
@@ -20,6 +23,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Build vintage newspaper module
+        run: node convert.js
+
       - name: Run Pipeline (Fetch RSS & Generate GEO AI Articles)
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -30,6 +36,6 @@ jobs:
         run: |
           git config --global user.name "LOPINUZE AI News Bot"
           git config --global user.email "bot@lopinuze.online"
-          git add raw_articles/ docs/
-          git commit -m "Auto-Update: Fetched market news, generated GEO AI articles, rebuilt docs" || exit 0
+          git add -A
+          git commit -m "Auto-Update: Fetched market news, generated GEO AI articles, rebuilt vintage newspaper" || exit 0
           git push
