@@ -70,11 +70,14 @@ const SECTIONS = [
 ];
 
 const RSS_FEEDS = [
+  // ── Major News Wires (multi-section) ──
   { url: 'https://feeds.bbci.co.uk/news/world/rss.xml', cat: 'world-news' },
   { url: 'https://feeds.bbci.co.uk/news/technology/rss.xml', cat: 'tech' },
   { url: 'https://feeds.bbci.co.uk/news/business/rss.xml', cat: 'investing' },
   { url: 'https://feeds.bbci.co.uk/news/science_and_environment/rss.xml', cat: 'science' },
   { url: 'https://feeds.bbci.co.uk/news/health/rss.xml', cat: 'medicine' },
+  { url: 'https://feeds.bbci.co.uk/news/education/rss.xml', cat: 'education' },
+  { url: 'https://feeds.bbci.co.uk/news/politics/rss.xml', cat: 'politics' },
   { url: 'https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml', cat: 'tech' },
   { url: 'https://rss.nytimes.com/services/xml/rss/nyt/Business.xml', cat: 'investing' },
   { url: 'https://rss.nytimes.com/services/xml/rss/nyt/Science.xml', cat: 'science' },
@@ -82,24 +85,74 @@ const RSS_FEEDS = [
   { url: 'https://rss.nytimes.com/services/xml/rss/nyt/US.xml', cat: 'us-news' },
   { url: 'https://rss.nytimes.com/services/xml/rss/nyt/World.xml', cat: 'world-news' },
   { url: 'https://rss.nytimes.com/services/xml/rss/nyt/Climate.xml', cat: 'climate' },
+  { url: 'https://rss.nytimes.com/services/xml/rss/nyt/YourMoney.xml', cat: 'personal-finance' },
+  { url: 'https://rss.nytimes.com/services/xml/rss/nyt/RealEstate.xml', cat: 'real-estate' },
+  { url: 'https://rss.nytimes.com/services/xml/rss/nyt/Education.xml', cat: 'education' },
   { url: 'https://www.theguardian.com/world/rss', cat: 'world-news' },
   { url: 'https://www.theguardian.com/technology/rss', cat: 'tech' },
   { url: 'https://www.theguardian.com/business/rss', cat: 'investing' },
   { url: 'https://www.theguardian.com/environment/rss', cat: 'environment' },
   { url: 'https://www.theguardian.com/science/rss', cat: 'science' },
+  { url: 'https://www.theguardian.com/world/europe-news/rss', cat: 'europe-news' },
+  { url: 'https://www.theguardian.com/world/asia-pacific/rss', cat: 'asia-news' },
+  // ── Tech & AI ──
   { url: 'https://hnrss.org/frontpage?points=20', cat: 'tech' },
-  { url: 'https://www.reddit.com/r/worldnews/.rss', cat: 'world-news' },
   { url: 'https://www.reddit.com/r/technology/.rss', cat: 'tech' },
-  { url: 'https://www.reddit.com/r/science/.rss', cat: 'science' },
+  { url: 'https://www.reddit.com/r/artificial/.rss', cat: 'ai' },
+  { url: 'https://www.reddit.com/r/MachineLearning/.rss', cat: 'machine-learning' },
+  { url: 'https://www.reddit.com/r/deeplearning/.rss', cat: 'deep-learning' },
+  { url: 'https://www.reddit.com/r/robotics/.rss', cat: 'robotics' },
+  { url: 'https://www.reddit.com/r/cybersecurity/.rss', cat: 'cybersecurity' },
+  { url: 'https://www.reddit.com/r/cloudcomputing/.rss', cat: 'cloud-computing' },
   { url: 'https://www.reddit.com/r/Futurology/.rss', cat: 'ai' },
   { url: 'https://www.reddit.com/r/gadgets/.rss', cat: 'tech' },
+  { url: 'https://www.reddit.com/r/virtualreality/.rss', cat: 'vr-ar' },
+  // ── Gaming ──
+  { url: 'https://www.reddit.com/r/gaming/.rss', cat: 'gaming' },
+  { url: 'https://www.reddit.com/r/esports/.rss', cat: 'esports' },
+  { url: 'https://www.reddit.com/r/Games/.rss', cat: 'game-reviews' },
+  { url: 'https://www.reddit.com/r/gamedev/.rss', cat: 'game-development' },
+  { url: 'https://www.reddit.com/r/MobileGaming/.rss', cat: 'mobile-gaming' },
+  // ── Finance & Crypto ──
   { url: 'https://www.reddit.com/r/CryptoCurrency/.rss', cat: 'cryptocurrency' },
   { url: 'https://www.reddit.com/r/StockMarket/.rss', cat: 'stock-market' },
   { url: 'https://www.reddit.com/r/finance/.rss', cat: 'personal-finance' },
+  { url: 'https://www.reddit.com/r/investing/.rss', cat: 'investing' },
+  { url: 'https://www.reddit.com/r/options/.rss', cat: 'trading' },
+  { url: 'https://www.reddit.com/r/RealEstate/.rss', cat: 'real-estate' },
+  { url: 'https://www.reddit.com/r/Forex/.rss', cat: 'forex' },
+  { url: 'https://www.reddit.com/r/ETFs/.rss', cat: 'etfs' },
+  { url: 'https://www.reddit.com/r/defi/.rss', cat: 'defi' },
+  { url: 'https://www.reddit.com/r/BitcoinMining/.rss', cat: 'crypto-mining' },
+  { url: 'https://www.reddit.com/r/fintech/.rss', cat: 'fintech' },
+  { url: 'https://www.reddit.com/r/blockchain/.rss', cat: 'blockchain' },
+  // ── Health & Wellness ──
   { url: 'https://www.reddit.com/r/health/.rss', cat: 'fitness' },
+  { url: 'https://www.reddit.com/r/nutrition/.rss', cat: 'nutrition' },
+  { url: 'https://www.reddit.com/r/mentalhealth/.rss', cat: 'mental-health' },
+  { url: 'https://www.reddit.com/r/Supplements/.rss', cat: 'supplements' },
+  { url: 'https://www.reddit.com/r/loseit/.rss', cat: 'weight-loss' },
+  { url: 'https://www.reddit.com/r/yoga/.rss', cat: 'yoga-meditation' },
+  { url: 'https://www.reddit.com/r/Meditation/.rss', cat: 'yoga-meditation' },
+  { url: 'https://www.reddit.com/r/psychology/.rss', cat: 'psychology' },
+  { url: 'https://www.reddit.com/r/neuroscience/.rss', cat: 'neuroscience' },
+  // ── Science & Space ──
+  { url: 'https://www.reddit.com/r/science/.rss', cat: 'science' },
   { url: 'https://www.reddit.com/r/space/.rss', cat: 'space' },
-  { url: 'https://www.reddit.com/r/gaming/.rss', cat: 'gaming' },
-  { url: 'https://www.reddit.com/r/esports/.rss', cat: 'esports' },
+  { url: 'https://www.reddit.com/r/Astronomy/.rss', cat: 'astronomy' },
+  { url: 'https://www.reddit.com/r/geology/.rss', cat: 'geology' },
+  { url: 'https://www.reddit.com/r/Physics/.rss', cat: 'physics' },
+  { url: 'https://www.reddit.com/r/biology/.rss', cat: 'biology' },
+  { url: 'https://www.reddit.com/r/chemistry/.rss', cat: 'chemistry' },
+  { url: 'https://www.reddit.com/r/energy/.rss', cat: 'energy' },
+  { url: 'https://www.reddit.com/r/climate/.rss', cat: 'climate' },
+  // ── World & Politics ──
+  { url: 'https://www.reddit.com/r/worldnews/.rss', cat: 'world-news' },
+  { url: 'https://www.reddit.com/r/politics/.rss', cat: 'politics' },
+  { url: 'https://www.reddit.com/r/news/.rss', cat: 'us-news' },
+  { url: 'https://www.reddit.com/r/europe/.rss', cat: 'europe-news' },
+  { url: 'https://www.reddit.com/r/asia/.rss', cat: 'asia-news' },
+  { url: 'https://www.reddit.com/r/education/.rss', cat: 'education' },
 ];
 
 function log(msg, level = 'INFO') {
@@ -155,16 +208,25 @@ async function fetchRSS(url) {
 
 async function fetchFromAllRSS() {
   const all = [];
+  const coveredSections = new Set();
   const shuffled = RSS_FEEDS.sort(() => Math.random() - 0.5);
-  for (const feed of shuffled.slice(0, 15)) {
+  
+  // Fetch ALL feeds to maximize section coverage
+  for (const feed of shuffled) {
     const items = await fetchRSS(feed.url);
     for (const item of items) {
       const targetSection = SECTIONS.find(s => s.slug === feed.cat)?.slug || 'world-news';
       all.push({ ...item, targetSection, originalSource: item.source });
+      coveredSections.add(targetSection);
     }
-    log(`Fetched ${items.length} from ${feed.url}`);
-    await new Promise(r => setTimeout(r, 300));
+    if (items.length > 0) log(`Fetched ${items.length} from ${feed.url}`);
+    await new Promise(r => setTimeout(r, 200));
   }
+  
+  // Log coverage
+  const uncovered = SECTIONS.filter(s => !coveredSections.has(s.slug)).map(s => s.slug);
+  log(`RSS covered ${coveredSections.size}/50 sections. Uncovered: ${uncovered.length > 0 ? uncovered.join(', ') : 'none'}`);
+  
   return all;
 }
 
@@ -283,8 +345,55 @@ async function runPipeline() {
   const articlesDir = path.join(__dirname, 'raw_articles');
   if (!fs.existsSync(articlesDir)) fs.mkdirSync(articlesDir, { recursive: true });
 
-  // Process up to 10 articles per run
-  for (const raw of rawArticles.slice(0, 10)) {
+  // Deduplication: check existing articles to avoid re-processing same titles
+  const existingTitles = new Set();
+  try {
+    const existingFiles = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
+    for (const f of existingFiles) {
+      try {
+        const data = JSON.parse(fs.readFileSync(path.join(articlesDir, f), 'utf-8'));
+        if (data.title) existingTitles.add(data.title.toLowerCase().trim());
+      } catch {}
+    }
+  } catch {}
+  log(`Dedup: ${existingTitles.size} existing articles loaded`);
+
+  // Deduplicate and prioritize uncovered sections
+  const sectionCounts = {};
+  const existingBySection = {};
+  try {
+    const existingFiles = fs.readdirSync(articlesDir).filter(f => f.endsWith('.json'));
+    for (const f of existingFiles) {
+      const sec = f.replace('article-','').replace(/-\d+\.json$/, '');
+      existingBySection[sec] = (existingBySection[sec] || 0) + 1;
+    }
+  } catch {}
+  
+  // Sort: sections with fewer articles first, then randomize within
+  const dedupedArticles = rawArticles
+    .filter(a => !existingTitles.has(a.title.toLowerCase().trim()))
+    .sort((a, b) => (existingBySection[a.targetSection] || 0) - (existingBySection[b.targetSection] || 0));
+
+  // Ensure at least 1 article per section before adding more to popular sections
+  const selectedArticles = [];
+  const selectedSections = new Set();
+  for (const art of dedupedArticles) {
+    if (!selectedSections.has(art.targetSection)) {
+      selectedArticles.push(art);
+      selectedSections.add(art.targetSection);
+    }
+  }
+  // Fill remaining slots with other articles
+  for (const art of dedupedArticles) {
+    if (!selectedArticles.includes(art) && selectedArticles.length < 50) {
+      selectedArticles.push(art);
+    }
+  }
+
+  log(`Processing ${selectedArticles.length} articles across ${selectedSections.size} sections...`);
+
+  // Process up to 50 articles per run (1 per section minimum)
+  for (const raw of selectedArticles.slice(0, 50)) {
     // Try DeepSeek first as requested by user, fall back to Gemini
     let rewritten = await rewriteWithDeepSeek(raw);
     if (!rewritten) {
