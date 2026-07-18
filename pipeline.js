@@ -20,7 +20,7 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'YOUR_GEMINI_KEY';
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || 'YOUR_DEEPSEEK_KEY';
 const SITE_NAME = 'LOPINUZE';
 const DOMAIN = 'LOPINUZE.2BD.NET';
-const NEWS_DIR = path.join(__dirname, 'news-empire');
+const NEWS_DIR = path.join(__dirname, 'docs');
 const LOG_DIR = path.join(__dirname, 'logs');
 const STATS_FILE = path.join(__dirname, 'pipeline-stats.json');
 
@@ -416,7 +416,7 @@ ${affiliateHTML}
 ${relatedArticles}
 </article>
 </main>
-<footer class="site-footer"><div class="container"><div><strong>${SITE_NAME}</strong><br>${DOMAIN} &copy; 2026<br><a href="http://dnsexit.com"><img src="http://dnsexit.com/images/dns.gif" border=0></a> <a href="http://dnsexit.com"><img src="http://dnsexit.com/images/dns2.gif" border=0></a> DNS Powered by <font color="#006699"><a href="http://www.dnsExit.com">DNS</a></font><a href="http://www.dnsExit.com"><font color="#FF6600">EXIT</font>.COM</a></div><div><a href="/index.html">Home</a> · <a href="/disclaimer.html">Disclaimer</a> · <a href="/privacy-policy.html">Privacy</a></div></div></footer>
+<footer class="site-footer"><div class="container"><div><strong>${SITE_NAME}</strong><br>${DOMAIN} &copy; 2026</div><div><a href="/index.html">Home</a> · <a href="/disclaimer.html">Disclaimer</a> · <a href="/privacy-policy.html">Privacy</a></div></div></footer>
 </body>
 </html>`;
 }
