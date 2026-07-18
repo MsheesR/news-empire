@@ -4,8 +4,8 @@ let code = fs.readFileSync('build-newspaper.js', 'utf8');
 // 1. Change output dir to docs
 code = code.replace(/const O=path\.join\(__dirname,'news-empire'\);/g, "const O=path.join(__dirname,'docs');");
 
-// 2. Add Monetag script with double quotes
-const monetag = '<script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>';
+// 2. Add Monetag script and Adsterra/Monetag/EZMob verification meta tags
+const monetag = '<!-- EZMob Site Validation Code: EZMFXSJHYTGLUZ7YKTW --><meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>';
 code = code.replace(/<head>/g, '<head>' + monetag);
 
 // 3. Make it a module
