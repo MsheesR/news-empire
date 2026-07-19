@@ -3,6 +3,7 @@
  * Aged paper background, paper folds, ink bleed, custom SVG icons
  */
 const fs=require('fs');
+const ads = require('./ads.js');
 
 let allAiArticles = [];
 function loadAiArticles() {
