@@ -14,7 +14,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent / '.env')
 
 # ============================ SITE ============================
-SITE_URL = os.getenv('SITE_URL', 'https://LOPINUZE.2BD.NET')
+SITE_URL = os.getenv('SITE_URL', 'https://lopinuze.online')
 SITE_NAME = os.getenv('SITE_NAME', 'LOPINUZE')
 
 # ============================ API KEYS ============================

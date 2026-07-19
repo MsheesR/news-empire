@@ -524,22 +524,9 @@ for (const a of allAiArticles) {
   fs.writeFileSync(path.join(O, 'articles', a.actualFile), html);
 }
 
-// ALSO SYNC TO ROOT DIRECTORY FOR GITHUB PAGES ROOT COMPATIBILITY
-try {
-  const docsFiles = fs.readdirSync(O);
-  for (const f of docsFiles) {
-    if (f === 'articles') {
-      if (!fs.existsSync(path.join(__dirname, 'articles'))) fs.mkdirSync(path.join(__dirname, 'articles'), {recursive:true});
-      const artFiles = fs.readdirSync(path.join(O, 'articles'));
-      for (const af of artFiles) {
-        fs.copyFileSync(path.join(O, 'articles', af), path.join(__dirname, 'articles', af));
-      }
-    } else {
-      fs.copyFileSync(path.join(O, f), path.join(__dirname, f));
-    }
-  }
-  console.log('✅ Synced vintage newspaper to root directory for GitHub Pages root compatibility');
-} catch(e) { console.error('Root sync warning:', e.message); }
+// Root sync disabled — all generated files stay in docs/ directory to keep root clean
+// GitHub Pages is configured to serve from docs/ folder
+console.log('✅ Files generated in docs/ (GitHub Pages configured to serve from /docs)');
 
 console.log('\n🎉 Complete!');
 }

@@ -1,3 +1,30 @@
 node_modules/
 .env
 .DS_Store
+# Generated output directories
+docs/
+news-empire/
+news/
+raw_articles/
+fetched-articles/
+logs/
+# Generated article files
+article-*.html
+section-*.html
+index.html
+finance.html
+disclaimer.html
+privacy-policy.html
+terms.html
+# Verification/ads files that get synced
+9a0153ac34adb4656ff5.txt
+9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.txt
+9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.html
+b6f6aae6c0c7b81231dd.txt
+b6f6aae6c0c7b81231dd.html
+# Pipeline stats
+pipeline-stats.json
+# AI-generated articles directory (synced by build script)
+articles/
+# Ad farm
+ad farm/

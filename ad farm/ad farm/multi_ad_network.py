@@ -75,10 +75,11 @@ class MultiAdEngine:
         
         # These will be populated from .env
         hilltop_id = os.getenv('HILLTOPADS_PUBLISHER_ID', HILLTOPADS_PUBLISHER_ID)
-        propellerads_id = os.getenv('PROPELLERADS_PUBLISHER_ID', '')
-        popads_id = os.getenv('POPADS_PUBLISHER_ID', '')
+        ezmob_id = os.getenv('EZMOB_PUBLISHER_ID', '')
         adsterra_id = os.getenv('ADSTERRA_PUBLISHER_ID', '')
         monetag_id = os.getenv('MONETAG_PUBLISHER_ID', '')
+        propellerads_id = os.getenv('PROPELLERADS_PUBLISHER_ID', '')
+        popads_id = os.getenv('POPADS_PUBLISHER_ID', '')
         admaven_id = os.getenv('ADMAVEN_PUBLISHER_ID', '')
         
         # HilltopAds (primary, if configured)
@@ -104,10 +105,22 @@ class MultiAdEngine:
                 publisher_id=adsterra_id,
                 types=["popunder", "banner_728x90", "banner_300x250", "native"],
                 cpm_estimate=1.50,
-                weight=0.35,
+                weight=0.30,
                 ad_selectors=["div[id*='adsterra']", "div[class*='adsterra']"]
             ))
-            logger.info(f"✅ Adsterra loaded (weight: 35%) — most lenient network")
+            logger.info(f"✅ Adsterra loaded (weight: 30%) — most lenient network")
+        
+        # EZMob (LENIENT — low security, popunder CPM $1.50-2.00)
+        if ezmob_id:
+            self.networks.append(AdNetwork(
+                name="EZMob",
+                publisher_id=ezmob_id,
+                types=["popunder"],
+                cpm_estimate=1.80,
+                weight=0.25,
+                ad_selectors=["div[id*='ezmob']", "div[class*='ezmob']"]
+            ))
+            logger.info(f"✅ EZMob loaded (weight: 25%) — lenient network")
         
         # Monetag (LENIENT — low security, popunder CPM $1.00-1.80)
         if monetag_id:
@@ -116,34 +129,34 @@ class MultiAdEngine:
                 publisher_id=monetag_id,
                 types=["popunder"],
                 cpm_estimate=1.50,
-                weight=0.30,
+                weight=0.25,
                 ad_selectors=["div[id*='monetag']", "div[class*='monetag']"]
             ))
-            logger.info(f"✅ Monetag loaded (weight: 30%) — lenient network")
+            logger.info(f"✅ Monetag loaded (weight: 25%) — lenient network")
         
-        # PopAds (MODERATE — popunder CPM $2.00-2.80)
-        if popads_id:
-            self.networks.append(AdNetwork(
-                name="PopAds",
-                publisher_id=popads_id,
-                types=["popunder"],
-                cpm_estimate=2.50,
-                weight=0.20,
-                ad_selectors=["div[id*='popads']", "div[class*='popads']"]
-            ))
-            logger.info(f"✅ PopAds loaded (weight: 20%)")
-        
-        # PropellerAds (MODERATE — popunder CPM $1.50-2.00)
+        # PropellerAds (BACKUP — popunder CPM $1.50-2.00)
         if propellerads_id:
             self.networks.append(AdNetwork(
                 name="PropellerAds",
                 publisher_id=propellerads_id,
                 types=["popunder"],
                 cpm_estimate=1.80,
-                weight=0.15,
+                weight=0.10,
                 ad_selectors=["div[id*='propellerads']", "div[class*='propellerads']"]
             ))
-            logger.info(f"✅ PropellerAds loaded (weight: 15%)")
+            logger.info(f"✅ PropellerAds loaded (weight: 10%) — backup")
+        
+        # PopAds (BACKUP — popunder CPM $2.00-2.80)
+        if popads_id:
+            self.networks.append(AdNetwork(
+                name="PopAds",
+                publisher_id=popads_id,
+                types=["popunder"],
+                cpm_estimate=2.50,
+                weight=0.05,
+                ad_selectors=["div[id*='popads']", "div[class*='popads']"]
+            ))
+            logger.info(f"✅ PopAds loaded (weight: 5%) — backup")
         
         # If only HilltopAds, it gets 100%
         if not self.networks and hilltop_id:

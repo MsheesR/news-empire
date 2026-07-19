@@ -35,7 +35,7 @@ document.addEventListener('click', function(e) {
   }
 });
 </script>
-`;
+`.replace(/\n/g, "");
 
 const monetag = '<!-- EZMob Site Validation Code: EZMFXSJHYTGLUZ7YKTW --><meta name="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" content="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" /><meta name="hilltopads-site-verification" content="b6f6aae6c0c7b81231dd" /><meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>' + smartLinksScript;
 code = code.replace(/<head>/g, '<head>' + monetag);

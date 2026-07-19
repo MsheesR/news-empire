@@ -394,15 +394,24 @@ async function runPipeline() {
 
   // Process up to 50 articles per run (1 per section minimum)
   for (const raw of selectedArticles.slice(0, 50)) {
-    // Try DeepSeek first as requested by user, fall back to Gemini
+    // Try DeepSeek first (primary AI), fall back to Gemini only if DeepSeek fails
     let rewritten = await rewriteWithDeepSeek(raw);
-    if (!rewritten) {
+    if (!rewritten && GEMINI_API_KEY && !GEMINI_API_KEY.startsWith('AQ.')) {
       log(`DeepSeek unavailable for "${raw.title.substring(0, 40)}...", trying Gemini...`);
       rewritten = await rewriteWithGemini(raw);
+    } else if (!rewritten) {
+      log(`DeepSeek failed and Gemini key is invalid/not configured for "${raw.title.substring(0, 40)}..."`);
     }
 
     if (!rewritten) {
-      log(`Both AI engines failed for "${raw.title.substring(0, 40)}...", skipping`, 'WARN');
+      log(`Content generation failed for "${raw.title.substring(0, 40)}...", retrying once more with DeepSeek...`);
+      // One retry with a fresh attempt after a short delay
+      await new Promise(r => setTimeout(r, 2000));
+      rewritten = await rewriteWithDeepSeek(raw);
+    }
+
+    if (!rewritten) {
+      log(`All generation attempts failed for "${raw.title.substring(0, 40)}...", skipping`, 'WARN');
       continue;
     }
 

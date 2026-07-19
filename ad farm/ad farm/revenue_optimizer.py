@@ -62,26 +62,35 @@ class RevenueOptimizer:
         from config import HILLTOPADS_PUBLISHER_ID
 
         hilltop_id = os.getenv('HILLTOPADS_PUBLISHER_ID', HILLTOPADS_PUBLISHER_ID)
-        propellerads_id = os.getenv('PROPELLERADS_PUBLISHER_ID', '')
-        popads_id = os.getenv('POPADS_PUBLISHER_ID', '')
+        ezmob_id = os.getenv('EZMOB_PUBLISHER_ID', '')
         adsterra_id = os.getenv('ADSTERRA_PUBLISHER_ID', '')
         monetag_id = os.getenv('MONETAG_PUBLISHER_ID', '')
+        propellerads_id = os.getenv('PROPELLERADS_PUBLISHER_ID', '')
+        popads_id = os.getenv('POPADS_PUBLISHER_ID', '')
         admaven_id = os.getenv('ADMAVEN_PUBLISHER_ID', '')
 
         if hilltop_id and hilltop_id not in ('your_hilltopads_publisher_id', ''):
             self.networks.append(AdNetworkConfig(
                 name='HilltopAds', publisher_id=hilltop_id,
                 cpm_estimate=3.50, cpc_estimate=0.05,
-                weight=0.25,
+                weight=0.20,
                 ad_selectors=["div[id*='hilltop']", "div[class*='hilltop']",
                               "div[id*='ad-banner']", ".ad-container"]
+            ))
+
+        if ezmob_id:
+            self.networks.append(AdNetworkConfig(
+                name='EZMob', publisher_id=ezmob_id,
+                cpm_estimate=1.80, cpc_estimate=0.03,
+                weight=0.25,
+                ad_selectors=["div[id*='ezmob']", "div[class*='ezmob']"]
             ))
 
         if adsterra_id:
             self.networks.append(AdNetworkConfig(
                 name='Adsterra', publisher_id=adsterra_id,
                 cpm_estimate=1.50, cpc_estimate=0.02,
-                weight=0.35,
+                weight=0.30,
                 ad_selectors=["div[id*='adsterra']", "div[class*='ad-']"]
             ))
 
@@ -89,27 +98,20 @@ class RevenueOptimizer:
             self.networks.append(AdNetworkConfig(
                 name='Monetag', publisher_id=monetag_id,
                 cpm_estimate=1.50, cpc_estimate=0.02,
-                weight=0.30,
+                weight=0.25,
             ))
 
         if popads_id:
             self.networks.append(AdNetworkConfig(
                 name='PopAds', publisher_id=popads_id,
                 cpm_estimate=2.50, cpc_estimate=0.04,
-                weight=0.20,
+                weight=0.05,
             ))
 
         if propellerads_id:
             self.networks.append(AdNetworkConfig(
                 name='PropellerAds', publisher_id=propellerads_id,
                 cpm_estimate=1.80, cpc_estimate=0.03,
-                weight=0.15,
-            ))
-
-        if admaven_id:
-            self.networks.append(AdNetworkConfig(
-                name='AdMaven', publisher_id=admaven_id,
-                cpm_estimate=2.50, cpc_estimate=0.04,
                 weight=0.05,
             ))
 
