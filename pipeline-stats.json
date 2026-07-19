@@ -1,6 +1,6 @@
 {
-  "totalArticles": 370,
-  "lastRun": "2026-07-19T02:19:04.909Z",
+  "totalArticles": 371,
+  "lastRun": "2026-07-19T03:36:21.477Z",
   "perSection": {
     "investing": 17,
     "tech": 139,
@@ -49,7 +49,7 @@
     "space": 1,
     "physics": 1,
     "biology": 1,
-    "psychology": 1,
+    "psychology": 2,
     "neuroscience": 1,
     "energy": 1
   }

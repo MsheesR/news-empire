@@ -4,6 +4,7 @@
  */
 const fs=require('fs');
 const ads = require('./ads.js');
+const { GEO_HTML } = require('./seo-engine.js');
 
 let allAiArticles = [];
 function loadAiArticles() {
