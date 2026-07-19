@@ -1,3 +1,7 @@
+/**
+ * Ad Injector — post-processes HTML files to inject ads
+ * FIXED: targets docs/ directory, uses ads.js module
+ */
 const fs = require('fs');
 const path = require('path');
 const ads = require('./ads.js');
@@ -5,7 +9,7 @@ const ads = require('./ads.js');
 const adHead = ads.getAdHead();
 const adMeta = ads.getAdMeta();
 const adFooter = ads.getAdFooter();
-const dir = path.join(__dirname, 'news-empire');
+const dir = path.join(__dirname, 'docs');
 
 function walk(d) {
   const files = fs.readdirSync(d, { withFileTypes: true });
@@ -22,4 +26,4 @@ function walk(d) {
   }
 }
 walk(dir);
-console.log('Ads injected into all pages');
+console.log('Ads injected into all docs/ pages');

@@ -1,8 +1,7 @@
 node_modules/
 .env
 .DS_Store
-# Generated output directories
-docs/
+# Generated output directories (docs/ MUST be committed for GitHub Pages deployment)
 news-empire/
 news/
 raw_articles/

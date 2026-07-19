@@ -1,16 +1,15 @@
 /**
  * SYNC: Connect pipeline AI articles to section pages
- * Reads real articles from news-empire/articles/ and updates section pages
- * Also generates unique headlines per article 
+ * FIXED: correct directory path (raw_articles/), template literal fix
  */
 const fs = require('fs');
 const path = require('path');
 
-const NEWS = path.join(__dirname, 'news-empire');
-const ARTS = path.join(NEWS, 'articles');
+const NEWS = path.join(__dirname, 'docs');
+const ARTS = path.join(__dirname, 'raw_articles');
 
 if (!fs.existsSync(ARTS)) {
-  console.log('No articles directory yet. Run pipeline first.');
+  console.log('No raw_articles directory yet. Run pipeline first (node pipeline.js).');
   process.exit(1);
 }
 
@@ -36,7 +35,7 @@ let updated = 0;
 for (const [section, articles] of Object.entries(bySection)) {
   const sectionFile = path.join(NEWS, `section-${section}.html`);
   if (!fs.existsSync(sectionFile)) {
-    console.log(`  ⚠ No section page: section-${section}.html (skipping)`);
+    console.log(`  \u26A0 No section page: section-${section}.html (skipping)`);
     continue;
   }
 
@@ -50,22 +49,23 @@ for (const [section, articles] of Object.entries(bySection)) {
   if (latest.length === 0) continue;
 
   // Build article cards
-  const author = (a) => a.seo?.author || 'LOPINUZE News Desk';
+  function getAuthor(art) {
+    return art.seo?.author || 'LOPINUZE News Desk';
+  }
   
   const cards = latest.map((a, i) => {
     const title = a.title || 'Latest Update';
     const excerpt = (a.content || '').replace(/<[^>]+>/g, '').substring(0, 200);
     const date = a.seo?.date || '2026-07-13';
-    const authorName = author(a);
-    const icon = section.substring(0,2).toUpperCase();
-    const fileBase = path.basename(a.link || '').replace(/\.json$/, '') || `article-${section}-${i}`;
+    const authorName = getAuthor(a);
+    const fileBase = path.basename(String(a.link || a.seo?.slug || '')).replace(/\.json$/, '') || `article-${section}-${i + 1}`;
     
     return `<article class="article-card-newspaper" onclick="location.href='/articles/${fileBase}.html'">
 <div class="num-col">${String(i+1).padStart(2,'0')}</div>
 <div class="content-col">
 <div class="section-label">${section.replace(/-/g,' ').toUpperCase()}</div>
 <h3><a href="/articles/${fileBase}.html">${title}</a></h3>
-<div class="meta">By ${authorName} · ${date} · ${Math.ceil((a.content||'').split(' ').length / 200)} min read</div>
+<div class="meta">By ${authorName} \u00B7 ${date} \u00B7 ${Math.ceil((a.content||'').split(' ').length / 180)} min read</div>
 <p>${excerpt}...</p>
 </div></article>`;
   }).join('');
@@ -75,27 +75,26 @@ for (const [section, articles] of Object.entries(bySection)) {
   
   if (listRegex.test(html)) {
     html = html.replace(listRegex, 
-      `<div class="article-list">${cards}</div>\n<div class="pagination" style="text-align:center;margin-top:1rem;font-size:0.7rem;color:var(--tm);font-style:italic;">Showing ${latest.length} of ${articles.length} articles · Updated continuously</div>\n</main>`
+      `<div class="article-list">${cards}</div>\n<div class="pagination" style="text-align:center;margin-top:1rem;font-size:0.7rem;color:var(--tm);font-style:italic;">Showing ${latest.length} of ${articles.length} articles \u00B7 Updated continuously</div>\n</main>`
     );
     html = html.replace('</body>', `<!-- Synced: ${new Date().toISOString()} | ${articles.length} articles -->\n</body>`);
     fs.writeFileSync(sectionFile, html);
-    console.log(`  ✅ Updated section-${section}.html with ${latest.length} articles`);
+    console.log(`  \u2705 Updated section-${section}.html with ${latest.length} articles`);
     updated++;
   }
 }
 
-console.log(`\n✅ Updated ${updated} section pages with real AI-written articles`);
+console.log(`\n\u2705 Updated ${updated} section pages with real AI-written articles`);
 
-// Also update the landing page to remove "Latest Stories" dumping
+// Clean landing page of broken article links
 const landing = path.join(NEWS, 'index.html');
 if (fs.existsSync(landing)) {
   let html = fs.readFileSync(landing, 'utf8');
-  // Remove any pipeline-dumped "Latest Stories" section that has broken links
-  html = html.replace(/<h2[^>]*>🔥 Latest Stories[\s\S]*?<\/div>\s*<\/div>/g, '');
-  html = html.replace(/<h2[^>]*>📰 Editor's Picks[\s\S]*?<\/div>\s*<\/div>/g, '');
+  html = html.replace(/<h2[^>]*>\u{1F525} Latest Stories[\s\S]*?<\/div>\s*<\/div>/g, '');
+  html = html.replace(/<h2[^>]*>\u{1F4F0} Editor's Picks[\s\S]*?<\/div>\s*<\/div>/g, '');
   html = html.replace('</body>', `<!-- Cleaned: ${new Date().toISOString()} -->\n</body>`);
   fs.writeFileSync(landing, html);
-  console.log('✅ Cleaned landing page of broken article links');
+  console.log('\u2705 Cleaned landing page of broken article links');
 }
 
-console.log('\n🎉 Sync complete! Section pages now show real pipeline articles.');
+console.log('\n\u{1F389} Sync complete! Section pages now show real pipeline articles.');
