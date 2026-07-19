@@ -180,6 +180,11 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
 
 const LANG=`<div class="lang-switcher"><select onchange="if(this.value){window.location.href='https://translate.google.com/translate?hl='+this.value+'&sl=en&u='+encodeURIComponent(window.location.href)}"><option value="">🌐</option><option value="es">ES</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option><option value="pt">PT</option><option value="ru">RU</option><option value="zh-CN">中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ar">العربية</option><option value="hi">हिन्दी</option></select></div>`;
 
+// Bing + Google + Generic verification meta tags (injected into every page)
+const SEO_META = '<meta name="msvalidate.01" content="670A6BEF4154FC2C382AC7EF9F7CB980" />';
+const AD_META = '<meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><meta name="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" content="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" /><meta name="hilltopads-site-verification" content="b6f6aae6c0c7b81231dd" />';
+const HEAD_META = SEO_META + AD_META;
+
 const FOOTER=`<footer class="site-footer"><div class="container"><div><div class="footer-brand">${S}</div><div>${D} &copy; 2026</div></div><div><a href="/index.html">Home</a> · <a href="/section-world-news.html">World</a> · <a href="/finance.html">Finance</a><br><a href="/disclaimer.html">Disclaimer</a> · <a href="/privacy-policy.html">Privacy</a> · <a href="/terms.html">Terms</a></div></div></footer>`;
 function today(){const d=new Date();return d.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});}
 function icon(g){return GI[g]||GI.Technology;}
