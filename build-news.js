@@ -1,3 +1,4 @@
+/** 
  * Zero images | Pure typography | SEO/GEO/AEO ready
  */
 const fs=require('fs');const path=require('path');

@@ -1,4 +1,4 @@
-
+/** 
  * LOPINUZE.2BD.NET - Comprehensive Fix v2
  * 1. Remove ALL "AI" mentions from public pages
  * 2. Create legal pages (disclaimer, privacy, terms)
