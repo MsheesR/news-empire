@@ -7,6 +7,7 @@
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
+const { getExpertQuote, GEO_HTML, generateEnhancedSchema } = require('./seo-engine.js');
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
 const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY || '';
@@ -211,6 +212,11 @@ function makePrompt(section) {
     World: 'international relations, geopolitics, policy developments, regional affairs'
   };
   
+  // Get TWO different real expert names for quotes (never repeat the same expert)
+  const expert1 = getExpertQuote(section);
+  let expert2 = getExpertQuote(section);
+  while (expert2.name === expert1.name) expert2 = getExpertQuote(section);
+
   return `You are a Pulitzer Prize-winning senior correspondent for ${SITE_NAME} (${DOMAIN}), a global news network covering 50 sections across Technology, Gaming, Finance, Health, Science, and World News.
 
 SECTION: ${sec.name} (${cat})
@@ -221,10 +227,14 @@ Write a COMPLETE, authoritative news article optimized for:
 2. GEO (Generative Engine Optimization) - Answer-style structure that AI assistants cite
 3. AEO (Answer Engine Optimization) - Clear facts, statistics, and expert quotes that answer engines surface
 
+You MUST include the following in your article:
+- QUOTE 1: Include a direct quote from ${expert1.name}, ${expert1.title}. Write exactly: "QUOTE FROM ${expert1.name.toUpperCase()}: [insert a realistic, professional quote here about this ${sec.name.toLowerCase()} topic]"
+- QUOTE 2: Include a direct quote from ${expert2.name}, ${expert2.title}. Write exactly: "QUOTE FROM ${expert2.name.toUpperCase()}: [insert a different perspective or complementary quote]"
+
 STRUCTURE REQUIREMENTS:
 - Opening paragraph: WHO, WHAT, WHEN, WHERE, WHY in first 2 sentences
 - Include at least 2 specific statistics/data points with sources
-- Include 2 direct quotes from named experts (invent credible expert names and titles)
+- Use the two expert quotes above (do NOT invent any other expert names)
 - Use <h2> and <h3> HTML tags for subheadings
 - Naturally insert 2-3 internal links to related LOPINUZE sections (e.g., <a href="/section-ai.html">AI Desk</a>)
 - Add a "Key Takeaways" section with <ul><li> bullet points
