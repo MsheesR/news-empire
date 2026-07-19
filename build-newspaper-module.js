@@ -181,7 +181,7 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
 const LANG=`<div class="lang-switcher"><select onchange="if(this.value){window.location.href='https://translate.google.com/translate?hl='+this.value+'&sl=en&u='+encodeURIComponent(window.location.href)}"><option value="">🌐</option><option value="es">ES</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option><option value="pt">PT</option><option value="ru">RU</option><option value="zh-CN">中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ar">العربية</option><option value="hi">हिन्दी</option></select></div>`;
 
 // Bing + Google + Generic verification meta tags (injected into every page)
-const SEO_META = '<meta name="msvalidate.01" content="670A6BEF4154FC2C382AC7EF9F7CB980" />';
+const SEO_META = '<meta name="msvalidate.01" content="670A6BEF4154FC2C382AC7EF9F7CB980" /><meta name="google-site-verification" content="xLjF79vvjgMRR23zlTIyCCqX8SIv4avE46q6U_g39f8" />';
 const AD_META = '<meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><meta name="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" content="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" /><meta name="hilltopads-site-verification" content="b6f6aae6c0c7b81231dd" />';
 const HEAD_META = SEO_META + AD_META;
 
