@@ -3,8 +3,6 @@
  * Aged paper background, paper folds, ink bleed, custom SVG icons
  */
 const fs=require('fs');
-const ads = require('./ads.js');
-const { GEO_HTML } = require('./seo-engine.js');
 
 let allAiArticles = [];
 function loadAiArticles() {
@@ -180,11 +178,6 @@ body::after{content:'';position:fixed;inset:0;background:radial-gradient(ellipse
 
 const LANG=`<div class="lang-switcher"><select onchange="if(this.value){window.location.href='https://translate.google.com/translate?hl='+this.value+'&sl=en&u='+encodeURIComponent(window.location.href)}"><option value="">🌐</option><option value="es">ES</option><option value="fr">FR</option><option value="de">DE</option><option value="it">IT</option><option value="pt">PT</option><option value="ru">RU</option><option value="zh-CN">中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="ar">العربية</option><option value="hi">हिन्दी</option></select></div>`;
 
-// Bing + Google + Generic verification meta tags (injected into every page)
-const SEO_META = '<meta name="msvalidate.01" content="670A6BEF4154FC2C382AC7EF9F7CB980" /><meta name="google-site-verification" content="xLjF79vvjgMRR23zlTIyCCqX8SIv4avE46q6U_g39f8" />';
-const AD_META = '<meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><meta name="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" content="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" /><meta name="hilltopads-site-verification" content="b6f6aae6c0c7b81231dd" />';
-const HEAD_META = SEO_META + AD_META;
-
 const FOOTER=`<footer class="site-footer"><div class="container"><div><div class="footer-brand">${S}</div><div>${D} &copy; 2026</div></div><div><a href="/index.html">Home</a> · <a href="/section-world-news.html">World</a> · <a href="/finance.html">Finance</a><br><a href="/disclaimer.html">Disclaimer</a> · <a href="/privacy-policy.html">Privacy</a> · <a href="/terms.html">Terms</a></div></div></footer>`;
 function today(){const d=new Date();return d.toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});}
 function icon(g){return GI[g]||GI.Technology;}
@@ -204,7 +197,7 @@ for(const[gn,slugs]of Object.entries(GROUPS)){
 const cards=slugs.map(s=>{const sec=SECTIONS.find(x=>x.s===s);if(!sec)return'';return'<a href="/section-'+s+'.html" class="section-card"><span class="si">'+icon(sec.g)+'</span><div class="sc"><h3>'+sec.n+'</h3></div></a>'}).join('');
 gs+='<div class="cat-group"><h2>'+icon(gn)+' '+gn+'</h2><div class="cat-desc">'+slugs.length+' sections</div><div class="section-grid">'+cards+'</div></div>';
 }
-return'<!DOCTYPE html><html lang="en"><head><!-- EZMob Site Validation Code: EZMFXSJHYTGLUZ7YKTW --><meta name="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" content="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" /><meta name="hilltopads-site-verification" content="b6f6aae6c0c7b81231dd" /><meta name="msvalidate.01" content="670A6BEF4154FC2C382AC7EF9F7CB980" /><meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>
+return'<!DOCTYPE html><html lang="en"><head><!-- EZMob Site Validation Code: EZMFXSJHYTGLUZ7YKTW --><meta name="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" content="9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd" /><meta name="hilltopads-site-verification" content="b6f6aae6c0c7b81231dd" /><meta name="monetag" content="439975c2b466e46aa6206140297bfdcc"><meta name="adsterra" content="439975c2b466e46aa6206140297bfdcc"><meta name="a.validate.02" content="439975c2b466e46aa6206140297bfdcc"><script>(function(d,z,s){s.src="https://"+d+"/401/"+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})("5gvci.com",11342729,document.createElement("script"))</script>
 <script src="https://quge5.com/88/tag.min.js" data-zone="261081" async data-cfasync="false"></script>
 <script>
 (function(fvovmd){
@@ -484,7 +477,6 @@ if(fs.existsSync('b6f6aae6c0c7b81231dd.txt')) fs.copyFileSync('b6f6aae6c0c7b8123
 if(fs.existsSync('b6f6aae6c0c7b81231dd.html')) fs.copyFileSync('b6f6aae6c0c7b81231dd.html', path.join(O, 'b6f6aae6c0c7b81231dd.html'));
 if(fs.existsSync('9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.txt')) fs.copyFileSync('9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.txt', path.join(O, '9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.txt'));
 if(fs.existsSync('9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.html')) fs.copyFileSync('9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.html', path.join(O, '9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.html'));
-if(fs.existsSync('BingSiteAuth.xml')) fs.copyFileSync('BingSiteAuth.xml', path.join(O, 'BingSiteAuth.xml'));
 fs.writeFileSync(path.join(O,'privacy-policy.html'),priv);
 fs.writeFileSync(path.join(O,'terms.html'),terms);
 fs.writeFileSync(path.join(O,'index.html'),landing());
