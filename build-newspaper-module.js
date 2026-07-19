@@ -479,6 +479,7 @@ if(fs.existsSync('b6f6aae6c0c7b81231dd.txt')) fs.copyFileSync('b6f6aae6c0c7b8123
 if(fs.existsSync('b6f6aae6c0c7b81231dd.html')) fs.copyFileSync('b6f6aae6c0c7b81231dd.html', path.join(O, 'b6f6aae6c0c7b81231dd.html'));
 if(fs.existsSync('9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.txt')) fs.copyFileSync('9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.txt', path.join(O, '9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.txt'));
 if(fs.existsSync('9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.html')) fs.copyFileSync('9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.html', path.join(O, '9a0153ac34adb4656ff5b6f6aae6c0c7b81231dd.html'));
+if(fs.existsSync('BingSiteAuth.xml')) fs.copyFileSync('BingSiteAuth.xml', path.join(O, 'BingSiteAuth.xml'));
 fs.writeFileSync(path.join(O,'privacy-policy.html'),priv);
 fs.writeFileSync(path.join(O,'terms.html'),terms);
 fs.writeFileSync(path.join(O,'index.html'),landing());
