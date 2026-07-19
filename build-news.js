@@ -174,6 +174,10 @@ xml+='</urlset>';return xml;
 
 // Build
 if(fs.existsSync(O))fs.rmSync(O,{recursive:true,force:true});fs.mkdirSync(O,{recursive:true});
+// Copy CNAME to output for custom domain (must survive rebuilds)
+if(fs.existsSync('CNAME')) fs.copyFileSync('CNAME', path.join(O, 'CNAME'));
+if(fs.existsSync('BingSiteAuth.xml')) fs.copyFileSync('BingSiteAuth.xml', path.join(O, 'BingSiteAuth.xml'));
+if(fs.existsSync('sw.js')) fs.copyFileSync('sw.js', path.join(O, 'sw.js'));
 fs.writeFileSync(path.join(O,'robots.txt'),robots);
 fs.writeFileSync(path.join(O,'sitemap.xml'),sitemap());
 console.log('✅ robots.txt + sitemap.xml');
