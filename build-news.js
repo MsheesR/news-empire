@@ -2,6 +2,7 @@
  * Zero images | Pure typography | SEO/GEO/AEO ready
  */
 const fs=require('fs');const path=require('path');
+const ads = require('./ads.js');
 const S='LOPINUZE';const D='LOPINUZE.2BD.NET';const O=path.join(__dirname,'news-empire');
 const APP=12;const TAS=24;
 
